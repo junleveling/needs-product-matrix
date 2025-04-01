@@ -1,0 +1,671 @@
+[
+  {
+    "matrixType": "basic-financial-needs",
+    "title": "基本財務需求配對矩陣",
+    "description": "展示基本財務需求與產品特色的配對關係",
+    "columns": [
+      {
+        "name": "信用卡產品",
+        "key": "credit-card"
+      },
+      {
+        "name": "存款產品",
+        "key": "savings"
+      },
+      {
+        "name": "貸款產品",
+        "key": "loan"
+      },
+      {
+        "name": "投資產品",
+        "key": "investment"
+      },
+      {
+        "name": "保險產品",
+        "key": "insurance"
+      },
+      {
+        "name": "財富管理產品",
+        "key": "wealth-management"
+      }
+    ],
+    "rows": [
+      {
+        "category": "儲蓄與流動性需求",
+        "items": [
+          {
+            "name": "短期資金存放",
+            "values": {
+              "credit-card": "低",
+              "savings": "高",
+              "loan": "低",
+              "investment": "中",
+              "insurance": "低",
+              "wealth-management": "中"
+            },
+            "productMatch": "savings",
+            "compatibilityScore": 90
+          },
+          {
+            "name": "緊急備用金",
+            "values": {
+              "credit-card": "中",
+              "savings": "高",
+              "loan": "低",
+              "investment": "低",
+              "insurance": "低",
+              "wealth-management": "中"
+            },
+            "productMatch": "savings",
+            "compatibilityScore": 85
+          },
+          {
+            "name": "日常交易便利性",
+            "values": {
+              "credit-card": "高",
+              "savings": "高",
+              "loan": "低",
+              "investment": "低",
+              "insurance": "低",
+              "wealth-management": "低"
+            },
+            "productMatch": "credit-card",
+            "compatibilityScore": 95
+          }
+        ]
+      },
+      {
+        "category": "融資需求",
+        "items": [
+          {
+            "name": "購屋資金",
+            "values": {
+              "credit-card": "低",
+              "savings": "低",
+              "loan": "高",
+              "investment": "低",
+              "insurance": "低",
+              "wealth-management": "低"
+            },
+            "productMatch": "loan",
+            "compatibilityScore": 95
+          },
+          {
+            "name": "教育資金",
+            "values": {
+              "credit-card": "低",
+              "savings": "中",
+              "loan": "高",
+              "investment": "中",
+              "insurance": "中",
+              "wealth-management": "中"
+            },
+            "productMatch": "loan",
+            "compatibilityScore": 80
+          },
+          {
+            "name": "消費融資",
+            "values": {
+              "credit-card": "高",
+              "savings": "低",
+              "loan": "高",
+              "investment": "低",
+              "insurance": "低",
+              "wealth-management": "低"
+            },
+            "productMatch": "credit-card",
+            "compatibilityScore": 85
+          }
+        ]
+      },
+      {
+        "category": "投資需求",
+        "items": [
+          {
+            "name": "資產增值",
+            "values": {
+              "credit-card": "低",
+              "savings": "低",
+              "loan": "低",
+              "investment": "高",
+              "insurance": "中",
+              "wealth-management": "高"
+            },
+            "productMatch": "investment",
+            "compatibilityScore": 90
+          },
+          {
+            "name": "退休規劃",
+            "values": {
+              "credit-card": "低",
+              "savings": "低",
+              "loan": "低",
+              "investment": "高",
+              "insurance": "中",
+              "wealth-management": "高"
+            },
+            "productMatch": "wealth-management",
+            "compatibilityScore": 95
+          },
+          {
+            "name": "財富傳承",
+            "values": {
+              "credit-card": "低",
+              "savings": "低",
+              "loan": "低",
+              "investment": "中",
+              "insurance": "高",
+              "wealth-management": "高"
+            },
+            "productMatch": "wealth-management",
+            "compatibilityScore": 90
+          }
+        ]
+      }
+    ],
+    "dimensionExplanation": "基本財務需求矩陣從儲蓄、融資和投資三個維度，展示客戶基本財務需求與六大類產品的適配關係。"
+  },
+  {
+    "matrixType": "extended-financial-needs",
+    "title": "延伸財務需求配對矩陣",
+    "description": "展示延伸財務需求與產品特色的配對關係",
+    "columns": [
+      {
+        "name": "信用卡產品",
+        "key": "credit-card"
+      },
+      {
+        "name": "存款產品",
+        "key": "savings"
+      },
+      {
+        "name": "貸款產品",
+        "key": "loan"
+      },
+      {
+        "name": "投資產品",
+        "key": "investment"
+      },
+      {
+        "name": "保險產品",
+        "key": "insurance"
+      },
+      {
+        "name": "財富管理產品",
+        "key": "wealth-management"
+      }
+    ],
+    "rows": [
+      {
+        "category": "風險管理需求",
+        "items": [
+          {
+            "name": "投資風險分散",
+            "values": {
+              "credit-card": "低",
+              "savings": "低",
+              "loan": "低",
+              "investment": "高",
+              "insurance": "中",
+              "wealth-management": "高"
+            },
+            "productMatch": "wealth-management",
+            "compatibilityScore": 90
+          },
+          {
+            "name": "資產保值",
+            "values": {
+              "credit-card": "低",
+              "savings": "中",
+              "loan": "低",
+              "investment": "中",
+              "insurance": "中",
+              "wealth-management": "高"
+            },
+            "productMatch": "wealth-management",
+            "compatibilityScore": 85
+          },
+          {
+            "name": "匯率風險規避",
+            "values": {
+              "credit-card": "低",
+              "savings": "低",
+              "loan": "低",
+              "investment": "中",
+              "insurance": "低",
+              "wealth-management": "高"
+            },
+            "productMatch": "wealth-management",
+            "compatibilityScore": 80
+          },
+          {
+            "name": "通膨防禦",
+            "values": {
+              "credit-card": "低",
+              "savings": "低",
+              "loan": "低",
+              "investment": "高",
+              "insurance": "中",
+              "wealth-management": "高"
+            },
+            "productMatch": "investment",
+            "compatibilityScore": 85
+          }
+        ]
+      },
+      {
+        "category": "生活品質提升需求",
+        "items": [
+          {
+            "name": "生活便利性",
+            "values": {
+              "credit-card": "高",
+              "savings": "中",
+              "loan": "中",
+              "investment": "低",
+              "insurance": "低",
+              "wealth-management": "中"
+            },
+            "productMatch": "credit-card",
+            "compatibilityScore": 90
+          },
+          {
+            "name": "社會地位認同",
+            "values": {
+              "credit-card": "高",
+              "savings": "低",
+              "loan": "低",
+              "investment": "中",
+              "insurance": "低",
+              "wealth-management": "高"
+            },
+            "productMatch": "credit-card",
+            "compatibilityScore": 85
+          }
+        ]
+      },
+      {
+        "category": "特定人生階段需求",
+        "items": [
+          {
+            "name": "子女教育規劃",
+            "values": {
+              "credit-card": "低",
+              "savings": "中",
+              "loan": "中",
+              "investment": "高",
+              "insurance": "高",
+              "wealth-management": "高"
+            },
+            "productMatch": "insurance",
+            "compatibilityScore": 90
+          },
+          {
+            "name": "退休生活保障",
+            "values": {
+              "credit-card": "低",
+              "savings": "低",
+              "loan": "低",
+              "investment": "高",
+              "insurance": "高",
+              "wealth-management": "高"
+            },
+            "productMatch": "wealth-management",
+            "compatibilityScore": 95
+          }
+        ]
+      }
+    ],
+    "dimensionExplanation": "延伸財務需求矩陣從風險管理、生活品質提升和特定人生階段三個維度，展示客戶延伸財務需求與六大類產品的適配關係。"
+  },
+  {
+    "matrixType": "special-situation-needs",
+    "title": "特殊情境需求配對矩陣",
+    "description": "展示特殊情境需求與產品特色的配對關係",
+    "columns": [
+      {
+        "name": "信用卡產品",
+        "key": "credit-card"
+      },
+      {
+        "name": "存款產品",
+        "key": "savings"
+      },
+      {
+        "name": "貸款產品",
+        "key": "loan"
+      },
+      {
+        "name": "投資產品",
+        "key": "investment"
+      },
+      {
+        "name": "保險產品",
+        "key": "insurance"
+      },
+      {
+        "name": "財富管理產品",
+        "key": "wealth-management"
+      }
+    ],
+    "rows": [
+      {
+        "category": "跨國需求",
+        "items": [
+          {
+            "name": "海外資產配置",
+            "values": {
+              "credit-card": "低",
+              "savings": "低",
+              "loan": "低",
+              "investment": "高",
+              "insurance": "中",
+              "wealth-management": "高"
+            },
+            "productMatch": "wealth-management",
+            "compatibilityScore": 90
+          },
+          {
+            "name": "跨境資金調度",
+            "values": {
+              "credit-card": "中",
+              "savings": "中",
+              "loan": "低",
+              "investment": "中",
+              "insurance": "低",
+              "wealth-management": "高"
+            },
+            "productMatch": "wealth-management",
+            "compatibilityScore": 85
+          }
+        ]
+      },
+      {
+        "category": "稅務規劃需求",
+        "items": [
+          {
+            "name": "合法節稅",
+            "values": {
+              "credit-card": "低",
+              "savings": "低",
+              "loan": "中",
+              "investment": "中",
+              "insurance": "高",
+              "wealth-management": "高"
+            },
+            "productMatch": "insurance",
+            "compatibilityScore": 85
+          },
+          {
+            "name": "遺產稅規劃",
+            "values": {
+              "credit-card": "低",
+              "savings": "低",
+              "loan": "低",
+              "investment": "中",
+              "insurance": "高",
+              "wealth-management": "高"
+            },
+            "productMatch": "insurance",
+            "compatibilityScore": 90
+          }
+        ]
+      },
+      {
+        "category": "心理層面需求",
+        "items": [
+          {
+            "name": "投資安全感",
+            "values": {
+              "credit-card": "低",
+              "savings": "高",
+              "loan": "低",
+              "investment": "中",
+              "insurance": "高",
+              "wealth-management": "高"
+            },
+            "productMatch": "savings",
+            "compatibilityScore": 90
+          },
+          {
+            "name": "財務自主感",
+            "values": {
+              "credit-card": "中",
+              "savings": "中",
+              "loan": "低",
+              "investment": "高",
+              "insurance": "中",
+              "wealth-management": "高"
+            },
+            "productMatch": "investment",
+            "compatibilityScore": 85
+          }
+        ]
+      }
+    ],
+    "dimensionExplanation": "特殊情境需求矩陣從跨國需求、稅務規劃需求和心理層面需求三個維度，展示客戶特殊情境需求與六大類產品的適配關係。"
+  },
+  {
+    "matrixType": "economic-environment",
+    "title": "經濟環境與產品推薦矩陣",
+    "description": "展示不同經濟環境下的產品推薦關係",
+    "columns": [
+      {
+        "name": "信用卡產品",
+        "key": "credit-card"
+      },
+      {
+        "name": "存款產品",
+        "key": "savings"
+      },
+      {
+        "name": "貸款產品",
+        "key": "loan"
+      },
+      {
+        "name": "投資產品",
+        "key": "investment"
+      },
+      {
+        "name": "保險產品",
+        "key": "insurance"
+      },
+      {
+        "name": "財富管理產品",
+        "key": "wealth-management"
+      }
+    ],
+    "rows": [
+      {
+        "category": "經濟擴張期",
+        "items": [
+          {
+            "name": "經濟成長",
+            "values": {
+              "credit-card": "高",
+              "savings": "低",
+              "loan": "中",
+              "investment": "高",
+              "insurance": "中",
+              "wealth-management": "高"
+            },
+            "productMatch": "investment",
+            "compatibilityScore": 90
+          },
+          {
+            "name": "就業率提升",
+            "values": {
+              "credit-card": "高",
+              "savings": "中",
+              "loan": "高",
+              "investment": "高",
+              "insurance": "中",
+              "wealth-management": "中"
+            },
+            "productMatch": "credit-card",
+            "compatibilityScore": 85
+          },
+          {
+            "name": "消費力增強",
+            "values": {
+              "credit-card": "高",
+              "savings": "中",
+              "loan": "高",
+              "investment": "中",
+              "insurance": "中",
+              "wealth-management": "中"
+            },
+            "productMatch": "credit-card",
+            "compatibilityScore": 90
+          }
+        ]
+      },
+      {
+        "category": "高通膨環境",
+        "items": [
+          {
+            "name": "物價上漲",
+            "values": {
+              "credit-card": "中",
+              "savings": "低",
+              "loan": "中",
+              "investment": "高",
+              "insurance": "中",
+              "wealth-management": "高"
+            },
+            "productMatch": "investment",
+            "compatibilityScore": 85
+          },
+          {
+            "name": "購買力下降",
+            "values": {
+              "credit-card": "中",
+              "savings": "低",
+              "loan": "低",
+              "investment": "高",
+              "insurance": "中",
+              "wealth-management": "高"
+            },
+            "productMatch": "investment",
+            "compatibilityScore": 80
+          },
+          {
+            "name": "實質利率降低",
+            "values": {
+              "credit-card": "低",
+              "savings": "低",
+              "loan": "高",
+              "investment": "高",
+              "insurance": "中",
+              "wealth-management": "高"
+            },
+            "productMatch": "loan",
+            "compatibilityScore": 85
+          },
+          {
+            "name": "資產保值需求",
+            "values": {
+              "credit-card": "低",
+              "savings": "低",
+              "loan": "低",
+              "investment": "高",
+              "insurance": "中",
+              "wealth-management": "高"
+            },
+            "productMatch": "wealth-management",
+            "compatibilityScore": 90
+          }
+        ]
+      },
+      {
+        "category": "市場波動期",
+        "items": [
+          {
+            "name": "風險規避",
+            "values": {
+              "credit-card": "低",
+              "savings": "高",
+              "loan": "低",
+              "investment": "低",
+              "insurance": "高",
+              "wealth-management": "中"
+            },
+            "productMatch": "savings",
+            "compatibilityScore": 90
+          },
+          {
+            "name": "資產避險",
+            "values": {
+              "credit-card": "低",
+              "savings": "中",
+              "loan": "低",
+              "investment": "中",
+              "insurance": "高",
+              "wealth-management": "高"
+            },
+            "productMatch": "insurance",
+            "compatibilityScore": 85
+          },
+          {
+            "name": "流動性需求",
+            "values": {
+              "credit-card": "中",
+              "savings": "高",
+              "loan": "低",
+              "investment": "低",
+              "insurance": "低",
+              "wealth-management": "中"
+            },
+            "productMatch": "savings",
+            "compatibilityScore": 90
+          }
+        ]
+      },
+      {
+        "category": "低利率環境",
+        "items": [
+          {
+            "name": "存款收益低",
+            "values": {
+              "credit-card": "低",
+              "savings": "低",
+              "loan": "低",
+              "investment": "高",
+              "insurance": "中",
+              "wealth-management": "高"
+            },
+            "productMatch": "investment",
+            "compatibilityScore": 90
+          },
+          {
+            "name": "融資成本低",
+            "values": {
+              "credit-card": "中",
+              "savings": "低",
+              "loan": "高",
+              "investment": "中",
+              "insurance": "低",
+              "wealth-management": "低"
+            },
+            "productMatch": "loan",
+            "compatibilityScore": 95
+          },
+          {
+            "name": "收益追求",
+            "values": {
+              "credit-card": "低",
+              "savings": "低",
+              "loan": "低",
+              "investment": "高",
+              "insurance": "中",
+              "wealth-management": "高"
+            },
+            "productMatch": "investment",
+            "compatibilityScore": 90
+          }
+        ]
+      }
+    ],
+    "dimensionExplanation": "經濟環境矩陣從經濟擴張期、高通膨環境、市場波動期和低利率環境四個維度，展示不同經濟環境下六大類產品的適配關係。"
+  }
+]

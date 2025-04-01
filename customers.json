@@ -1,0 +1,107 @@
+[
+  {
+    "ageGroup": "30-40",
+    "familyStatus": "with-minor-children",
+    "financialStatus": {
+      "incomeLevel": "medium-high",
+      "assetLevel": "medium",
+      "debtLevel": "medium"
+    },
+    "riskPreference": "moderate",
+    "financialLiteracy": "intermediate",
+    "needs": {
+      "basicNeeds": [
+        "短期資金存放",
+        "日常交易便利性",
+        "購屋資金",
+        "教育資金"
+      ],
+      "extendedNeeds": [
+        "投資風險分散",
+        "通膨防禦",
+        "子女教育規劃"
+      ],
+      "specialNeeds": [
+        "投資安全感"
+      ]
+    }
+  },
+  {
+    "ageGroup": "45-55",
+    "familyStatus": "with-adult-children",
+    "financialStatus": {
+      "incomeLevel": "high",
+      "assetLevel": "medium-high",
+      "debtLevel": "low"
+    },
+    "riskPreference": "moderate",
+    "financialLiteracy": "advanced",
+    "needs": {
+      "basicNeeds": [
+        "資產增值",
+        "退休規劃"
+      ],
+      "extendedNeeds": [
+        "投資風險分散",
+        "資產保值",
+        "退休生活保障"
+      ],
+      "specialNeeds": [
+        "海外資產配置",
+        "合法節稅",
+        "遺產稅規劃"
+      ]
+    }
+  },
+  {
+    "ageGroup": "22-30",
+    "familyStatus": "single",
+    "financialStatus": {
+      "incomeLevel": "medium-low",
+      "assetLevel": "low",
+      "debtLevel": "low"
+    },
+    "riskPreference": "aggressive",
+    "financialLiteracy": "beginner",
+    "needs": {
+      "basicNeeds": [
+        "短期資金存放",
+        "日常交易便利性",
+        "資產增值"
+      ],
+      "extendedNeeds": [
+        "生活便利性",
+        "社會地位認同"
+      ],
+      "specialNeeds": [
+        "財務自主感"
+      ]
+    }
+  },
+  {
+    "ageGroup": "65+",
+    "familyStatus": "empty-nest",
+    "financialStatus": {
+      "incomeLevel": "medium",
+      "assetLevel": "high",
+      "debtLevel": "none"
+    },
+    "riskPreference": "conservative",
+    "financialLiteracy": "intermediate",
+    "needs": {
+      "basicNeeds": [
+        "短期資金存放",
+        "退休規劃",
+        "財富傳承"
+      ],
+      "extendedNeeds": [
+        "資產保值",
+        "退休生活保障"
+      ],
+      "specialNeeds": [
+        "遺產稅規劃",
+        "投資安全感"
+      ]
+    }
+  }
+]

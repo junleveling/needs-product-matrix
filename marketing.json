@@ -1,0 +1,134 @@
+[
+  {
+    "angleType": "life-scenario",
+    "title": "生活情境切角",
+    "description": "透過連結產品與客戶真實生活情境，建立共鳴與認同",
+    "suitableProducts": ["credit-card", "loan", "insurance"],
+    "suitableCustomers": ["年輕家庭", "小資族", "退休族"],
+    "keyElements": [
+      "真實生活場景描述",
+      "情感連結",
+      "問題與解決方案",
+      "未來展望"
+    ],
+    "suggestedCopy": [
+      {
+        "title": "家庭保障文案",
+        "content": "當孩子的笑聲充滿整個家，您希望這份幸福能永遠持續。我們的保險方案不只是一份保單，而是對家人的承諾，讓您在面對人生各種可能時，依然能守護最重要的人。",
+        "targetProduct": "insurance",
+        "targetCustomerType": "with-minor-children"
+      },
+      {
+        "title": "首次購屋文案",
+        "content": "第一次擁有自己的家，是人生重要的里程碑。我們的首次購屋貸款方案，不只提供優惠利率，更是陪伴您從挑選心儀住宅到入住新家的每一步，讓夢想中的家成為現實。",
+        "targetProduct": "loan",
+        "targetCustomerType": "married-no-children"
+      }
+    ],
+    "effectivenessMetrics": {
+      "customerUnderstanding": 4,
+      "emotionalResonance": 5,
+      "differentiation": 3,
+      "callToAction": 4
+    }
+  },
+  {
+    "angleType": "functional-value",
+    "title": "功能價值切角",
+    "description": "強調產品功能特色與實質效益，適合理性決策客戶",
+    "suitableProducts": ["savings", "investment", "wealth-management"],
+    "suitableCustomers": ["理性決策者", "財務專業人士", "高資產客戶"],
+    "keyElements": [
+      "核心功能說明",
+      "數據支持",
+      "比較優勢",
+      "實質效益"
+    ],
+    "suggestedCopy": [
+      {
+        "title": "數位帳戶效益文案",
+        "content": "我們的數位活存帳戶提供業界領先的1.2%活存利率，每月免費跨行提款5次，年省手續費超過1,200元。整合行動支付與自動分類消費功能，讓您的資金管理更有效率，同時享有最大化的資金靈活度與收益。",
+        "targetProduct": "savings",
+        "targetCustomerType": "all"
+      },
+      {
+        "title": "退休投資組合文案",
+        "content": "我們的退休投資組合採用全球多元資產配置，過去五年平均年化報酬率達6.8%，波動率低於市場平均30%。專業團隊定期調整資產配置，根據經濟環境變化提供最適合的退休資金配置建議，兼顧收益與風險控制。",
+        "targetProduct": "wealth-management",
+        "targetCustomerType": "empty-nest"
+      }
+    ],
+    "effectivenessMetrics": {
+      "customerUnderstanding": 5,
+      "emotionalResonance": 2,
+      "differentiation": 3,
+      "callToAction": 4
+    }
+  },
+  {
+    "angleType": "emotional-appeal",
+    "title": "情感訴求切角",
+    "description": "觸發客戶情感共鳴，建立深層連結",
+    "suitableProducts": ["insurance", "wealth-management", "investment"],
+    "suitableCustomers": ["家庭客戶", "情感型決策者", "高齡客戶"],
+    "keyElements": [
+      "情感觸發點",
+      "價值觀連結",
+      "故事敘述",
+      "安心感營造"
+    ],
+    "suggestedCopy": [
+      {
+        "title": "家庭保障情感文案",
+        "content": "每個擁抱、每個親吻、每個共度的時光，都是無價的家庭記憶。我們的保險規劃不只是金錢保障，而是讓您能夠無後顧之憂地創造更多美好回憶，即使面對人生無常，也能確保家人的未來依然充滿陽光。",
+        "targetProduct": "insurance",
+        "targetCustomerType": "with-minor-children"
+      },
+      {
+        "title": "退休生活情感文案",
+        "content": "退休不是終點，而是人生新旅程的開始。多年來的辛勤工作，換來的應該是無憂無慮的黃金歲月。我們的退休投資組合，就是為了讓您能夠放心追尋夢想、享受生活，實現那些一直想做但未能實現的願望。",
+        "targetProduct": "wealth-management",
+        "targetCustomerType": "empty-nest"
+      }
+    ],
+    "effectivenessMetrics": {
+      "customerUnderstanding": 3,
+      "emotionalResonance": 5,
+      "differentiation": 4,
+      "callToAction": 3
+    }
+  },
+  {
+    "angleType": "social-recognition",
+    "title": "社會認同切角",
+    "description": "強調產品帶來的社會地位與認同感",
+    "suitableProducts": ["credit-card", "wealth-management", "investment"],
+    "suitableCustomers": ["高資產客戶", "社交活躍客戶", "年輕專業人士"],
+    "keyElements": [
+      "社會地位象徵",
+      "同儕認同",
+      "獨特性與稀缺性",
+      "品味與生活風格"
+    ],
+    "suggestedCopy": [
+      {
+        "title": "尊榮信用卡文案",
+        "content": "這不只是一張卡片，而是您成就與品味的象徵。我們的尊榮信用卡提供全球機場貴賓室無限次使用、五星級飯店優先升等和專屬禮賓服務，讓您在每一次旅行、每一場重要場合，都能展現與眾不同的尊貴身分。",
+        "targetProduct": "credit-card",
+        "targetCustomerType": "high"
+      },
+      {
+        "title": "高端理財服務文案",
+        "content": "加入我們的高端理財服務，您將與全球頂尖1%的成功人士站在同一陣線，享受專屬於精英階層的財富管理策略。我們的專業團隊服務全球超過500位億萬富豪，為您打造獨一無二的資產配置方案，彰顯您的非凡成就。",
+        "targetProduct": "wealth-management",
+        "targetCustomerType": "high"
+      }
+    ],
+    "effectivenessMetrics": {
+      "customerUnderstanding": 4,
+      "emotionalResonance": 4,
+      "differentiation": 4,
+      "callToAction": 3
+    }
+  }
+]

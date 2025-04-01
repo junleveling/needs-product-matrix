@@ -1,0 +1,252 @@
+[
+  {
+    "name": "超級現金回饋卡",
+    "category": "credit-card",
+    "description": "提供高額現金回饋的信用卡產品，適合日常消費使用",
+    "basicFeatures": [
+      "國內消費1.5%現金回饋",
+      "海外消費2.5%現金回饋",
+      "免年費條件: 年消費12萬",
+      "指定通路3%加碼回饋",
+      "新戶首刷禮: 2,000元刷卡金"
+    ],
+    "extendedFeatures": [
+      "機場貴賓室使用權",
+      "旅遊不便險",
+      "線上購物保障",
+      "24小時道路救援",
+      "電影購票優惠"
+    ],
+    "suitableNeeds": [
+      {
+        "needType": "basic",
+        "needName": "日常交易便利性",
+        "compatibilityLevel": 95
+      },
+      {
+        "needType": "extended",
+        "needName": "生活便利性",
+        "compatibilityLevel": 85
+      },
+      {
+        "needType": "basic",
+        "needName": "短期資金存放",
+        "compatibilityLevel": 60
+      },
+      {
+        "needType": "extended",
+        "needName": "社會地位認同",
+        "compatibilityLevel": 75
+      }
+    ],
+    "economicConsiderations": "在通膨環境下，現金回饋可抵消部分物價上漲影響，提供實質消費力保障。",
+    "targetCustomers": [
+      "年輕上班族",
+      "小資族",
+      "經常出國旅遊人士",
+      "網購族"
+    ],
+    "riskLevel": "low"
+  },
+  {
+    "name": "數位活存帳戶",
+    "category": "savings",
+    "description": "高利率數位存款帳戶，提供便利的線上金融服務",
+    "basicFeatures": [
+      "活存利率1.2%",
+      "數位帳戶免管理費",
+      "跨行提款每月5次免費",
+      "線上開戶禮金500元",
+      "數位通路交易優惠"
+    ],
+    "extendedFeatures": [
+      "行動支付整合",
+      "帳戶即時通知",
+      "自動分類消費紀錄",
+      "預算管理工具",
+      "定期定額投資功能"
+    ],
+    "suitableNeeds": [
+      {
+        "needType": "basic",
+        "needName": "短期資金存放",
+        "compatibilityLevel": 90
+      },
+      {
+        "needType": "basic",
+        "needName": "日常交易便利性",
+        "compatibilityLevel": 85
+      },
+      {
+        "needType": "basic",
+        "needName": "緊急備用金",
+        "compatibilityLevel": 80
+      },
+      {
+        "needType": "extended",
+        "needName": "生活便利性",
+        "compatibilityLevel": 75
+      }
+    ],
+    "economicConsiderations": "低利率環境中提供相對優惠的活存利率，同時兼顧流動性與收益性。",
+    "targetCustomers": [
+      "數位原生世代",
+      "上班族",
+      "理財新手",
+      "需要流動資金的客戶"
+    ],
+    "riskLevel": "low"
+  },
+  {
+    "name": "平衡型基金",
+    "category": "investment",
+    "description": "股債平衡配置的中度風險投資產品，追求穩健成長",
+    "basicFeatures": [
+      "股債配置比例約50:50",
+      "年化報酬目標6-8%",
+      "風險等級RR3",
+      "專業經理人管理",
+      "定期再平衡"
+    ],
+    "extendedFeatures": [
+      "全球資產配置",
+      "季度投資報告",
+      "自動再投資選項",
+      "定期定額優惠",
+      "投資組合分析工具"
+    ],
+    "suitableNeeds": [
+      {
+        "needType": "basic",
+        "needName": "資產增值",
+        "compatibilityLevel": 80
+      },
+      {
+        "needType": "extended",
+        "needName": "投資風險分散",
+        "compatibilityLevel": 85
+      },
+      {
+        "needType": "extended",
+        "needName": "通膨防禦",
+        "compatibilityLevel": 75
+      },
+      {
+        "needType": "basic",
+        "needName": "退休規劃",
+        "compatibilityLevel": 70
+      }
+    ],
+    "economicConsiderations": "經濟成長放緩期間，平衡型基金的防禦性配置可提供相對穩定的表現。",
+    "targetCustomers": [
+      "穩健型投資者",
+      "中年上班族",
+      "退休準備期客戶",
+      "首次投資基金客戶"
+    ],
+    "riskLevel": "medium"
+  },
+  {
+    "name": "首次購屋貸款",
+    "category": "loan",
+    "description": "為首次購屋者提供的優惠房貸方案，協助實現置產夢想",
+    "basicFeatures": [
+      "前2年固定利率1.31%",
+      "最高可貸8成",
+      "貸款年限最長30年",
+      "免開辦費",
+      "提前還款違約金減免"
+    ],
+    "extendedFeatures": [
+      "線上申請管道",
+      "房貸試算工具",
+      "房貸繳款提醒",
+      "自動扣款服務",
+      "房貸轉貸優惠"
+    ],
+    "suitableNeeds": [
+      {
+        "needType": "basic",
+        "needName": "購屋資金",
+        "compatibilityLevel": 95
+      },
+      {
+        "needType": "extended",
+        "needName": "子女教育規劃",
+        "compatibilityLevel": 70
+      },
+      {
+        "needType": "special",
+        "needName": "合法節稅",
+        "compatibilityLevel": 65
+      },
+      {
+        "needType": "basic",
+        "needName": "消費融資",
+        "compatibilityLevel": 60
+      }
+    ],
+    "economicConsiderations": "低利率環境下，固定利率房貸可鎖定前期還款成本，降低未來利率上升風險。",
+    "targetCustomers": [
+      "首次購屋族",
+      "年輕家庭",
+      "小家庭",
+      "雙薪家庭"
+    ],
+    "riskLevel": "medium-low"
+  },
+  {
+    "name": "退休投資組合",
+    "category": "wealth-management",
+    "description": "專為退休規劃設計的多元資產配置方案，兼顧收益與安全",
+    "basicFeatures": [
+      "客製化資產配置",
+      "定期收益分配",
+      "風險等級依客戶需求調整",
+      "專屬理財顧問服務",
+      "定期投資檢視"
+    ],
+    "extendedFeatures": [
+      "稅務規劃建議",
+      "遺產規劃諮詢",
+      "健康醫療保險整合",
+      "退休生活規劃工具",
+      "跨世代財富傳承方案"
+    ],
+    "suitableNeeds": [
+      {
+        "needType": "basic",
+        "needName": "退休規劃",
+        "compatibilityLevel": 95
+      },
+      {
+        "needType": "extended",
+        "needName": "退休生活保障",
+        "compatibilityLevel": 90
+      },
+      {
+        "needType": "basic",
+        "needName": "資產增值",
+        "compatibilityLevel": 75
+      },
+      {
+        "needType": "special",
+        "needName": "遺產稅規劃",
+        "compatibilityLevel": 85
+      },
+      {
+        "needType": "special",
+        "needName": "財務自主感",
+        "compatibilityLevel": 80
+      }
+    ],
+    "economicConsiderations": "經濟週期波動下，多元資產配置可降低單一市場風險，提供穩定的退休收入來源。",
+    "targetCustomers": [
+      "退休準備期客戶",
+      "已退休客戶",
+      "高資產客戶",
+      "企業主"
+    ],
+    "riskLevel": "medium-low"
+  }
+]
