@@ -1,0 +1,57 @@
+/* 行銷切角標題樣式 */
+.marketing-angle-examples {
+    background-color: #f8f9fa;
+    border-left: 4px solid #0d6efd;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.marketing-angle-examples h4 {
+    color: #0d6efd;
+    margin-bottom: 10px;
+}
+
+.marketing-angle-examples ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.marketing-angle-examples li {
+    padding: 5px 0;
+    border-bottom: 1px dashed #dee2e6;
+}
+
+.marketing-angle-examples li:last-child {
+    border-bottom: none;
+}
+
+.customer-profile-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    margin-right: 5px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.beginner-tag {
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.intermediate-tag {
+    background-color: #fff3cd;
+    color: #664d03;
+}
+
+.advanced-tag {
+    background-color: #cfe2ff;
+    color: #084298;
+}
+
+.angle-type {
+    font-weight: bold;
+    color: #6c757d;
+    margin-right: 5px;
+}

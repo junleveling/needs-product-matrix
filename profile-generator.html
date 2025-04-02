@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="zh-Hant"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;客戶樣貌分析 - 銀行客戶需求與產品適配矩陣&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="css/styles.css"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="js/profile-generator.js" defer&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="js/common.js" defer&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="logo"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="index.html"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="icon"&gt;🏦&lt;/span&gt; 銀行客戶需求與產品適配矩陣</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="index.html"&gt;首頁&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="matrices.html"&gt;配對矩陣&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="guides.html"&gt;財商與切角指南&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="cases.html"&gt;應用案例&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="profile-generator.html" class="active"&gt;客戶樣貌分析&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="about.html"&gt;關於&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;main&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section class="page-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1&gt;客戶樣貌分析&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;輸入客戶特徵，獲取客製化的產品推薦和行銷切角建議。&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section class="profile-generator"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="generator-form"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;客戶資料輸入&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;form id="profile-form"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;label for="age"&gt;年齡&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;input type="number" id="age" name="age" min="18" max="100" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;label for="lifecycle"&gt;生命週期階段&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;select id="lifecycle" name="lifecycle" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value=""&gt;請選擇&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value="early"&gt;成家立業期&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value="growth"&gt;家庭成長期&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value="peak"&gt;事業高峰期&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value="pre-retire"&gt;退休準備期&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value="retire"&gt;退休生活期&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;label for="risk"&gt;風險偏好&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;select id="risk" name="risk" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value=""&gt;請選擇&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value="conservative"&gt;保守型&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value="moderate"&gt;穩健型&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value="aggressive"&gt;積極型&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;label for="literacy"&gt;財商水平&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;select id="literacy" name="literacy" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value=""&gt;請選擇&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value="beginner"&gt;初階財商&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value="intermediate"&gt;中階財商&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value="advanced"&gt;高階財商&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;label&gt;主要需求（可複選）&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="checkbox-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="checkbox-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;input type="checkbox" id="need-savings" name="needs" value="savings"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;label for="need-savings"&gt;儲蓄與流動性&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="checkbox-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;input type="checkbox" id="need-loan" name="needs" value="loan"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;label for="need-loan"&gt;融資需求&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="checkbox-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;input type="checkbox" id="need-investment" name="needs" value="investment"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;label for="need-investment"&gt;投資需求&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="checkbox-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;input type="checkbox" id="need-risk" name="needs" value="risk"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;label for="need-risk"&gt;風險管理&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="checkbox-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;input type="checkbox" id="need-passive" name="needs" value="passive"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;label for="need-passive"&gt;被動收入&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="checkbox-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;input type="checkbox" id="need-overseas" name="needs" value="overseas"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;label for="need-overseas"&gt;海外資金調度&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="checkbox-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;input type="checkbox" id="need-tax" name="needs" value="tax"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;label for="need-tax"&gt;稅務規劃&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="checkbox-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;input type="checkbox" id="need-inheritance" name="needs" value="inheritance"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;label for="need-inheritance"&gt;財富傳承&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;label for="occupation"&gt;職業類型&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;select id="occupation" name="occupation"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value=""&gt;請選擇&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value="professional"&gt;專業人士&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value="business"&gt;企業主&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value="employee"&gt;受薪階級&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value="creative"&gt;創意工作者&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value="retired"&gt;退休人士&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;label for="education"&gt;教育程度&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;select id="education" name="education"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value=""&gt;請選擇&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value="high-school"&gt;高中/職&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value="college"&gt;大專/大學&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value="graduate"&gt;研究所以上&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;label for="decision-style"&gt;決策風格&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;select id="decision-style" name="decision-style"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value=""&gt;請選擇&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value="rational"&gt;理性決策&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value="emotional"&gt;感性決策&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value="mixed"&gt;混合型&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="form-actions"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;button type="submit" class="btn primary"&gt;生成客戶樣貌&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;button type="reset" class="btn secondary"&gt;重置&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="generator-result" id="profile-result"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;客戶樣貌分析與推薦&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="result-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="placeholder-text"&gt;請填寫左側表單並提交，獲取客製化的產品推薦和行銷切角建議。&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;&amp;copy; 2025 銀行客戶需求與產品特色配對矩陣 | 版權所有&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
