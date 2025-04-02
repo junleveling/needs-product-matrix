@@ -1,16 +1,253 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>index.html</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/marketing-angles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>銀行客戶需求與產品特色配對矩陣</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- 導航欄 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-bank me-2"></i>銀行客戶需求與產品特色配對矩陣
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matrices.html">配對矩陣</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guides.html">財商與切角指南</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cases.html">應用案例</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile-generator.html">客戶畫像生成器</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">關於</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <h1>index.html 頁面</h1>
+    <!-- 首頁橫幅 -->
+    <header class="bg-light py-5">
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center justify-content-center">
+                <div class="col-lg-8 col-xl-7 col-xxl-6">
+                    <div class="my-5">
+                        <h1 class="display-5 fw-bolder mb-3">精準配對客戶需求與銀行產品</h1>
+                        <p class="lead fw-normal mb-4">
+                            本互動式平台提供全面的客戶需求與產品特色配對矩陣，幫助銀行業專業人士根據客戶的風險偏好、生命週期階段、財商水平等維度，選擇最適合的產品和溝通策略。
+                        </p>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                            <a class="btn btn-primary btn-lg px-4 me-sm-3" href="matrices.html">
+                                探索配對矩陣
+                            </a>
+                            <a class="btn btn-outline-primary btn-lg px-4" href="profile-generator.html">
+                                客戶畫像生成器
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
+                    <img class="img-fluid rounded-3 my-5" src="https://via.placeholder.com/600x400?text=銀行客戶需求與產品特色配對矩陣" alt="配對矩陣示意圖" />
+                </div>
+            </div>
+        </div>
+    </header>
 
-  <script src="js/common.js"></script>
+    <!-- 主要維度導航卡片 -->
+    <section class="py-5">
+        <div class="container px-5">
+            <h2 class="fw-bolder mb-4">按維度探索配對矩陣</h2>
+            <div class="row gx-5">
+                <!-- 風險偏好維度卡片 -->
+                <div class="col-lg-3 mb-5">
+                    <div class="card h-100 shadow border-0">
+                        <div class="card-body p-4">
+                            <div class="badge bg-primary bg-gradient rounded-pill mb-2">風險偏好</div>
+                            <h5 class="card-title mb-3">風險偏好與財商水平</h5>
+                            <p class="card-text mb-0">
+                                探索不同風險偏好（保守型、穩健型、積極型）與財商水平的客戶適合的產品和行銷切角。
+                            </p>
+                        </div>
+                        <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                            <div class="d-flex align-items-end justify-content-between">
+                                <a href="matrices.html#risk-matrix" class="btn btn-sm btn-outline-primary">查看矩陣</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 生命週期維度卡片 -->
+                <div class="col-lg-3 mb-5">
+                    <div class="card h-100 shadow border-0">
+                        <div class="card-body p-4">
+                            <div class="badge bg-success bg-gradient rounded-pill mb-2">生命週期</div>
+                            <h5 class="card-title mb-3">生命週期與財商水平</h5>
+                            <p class="card-text mb-0">
+                                了解不同生命週期階段（成家立業期、家庭成長期、事業高峰期等）的客戶需求與產品配對。
+                            </p>
+                        </div>
+                        <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                            <div class="d-flex align-items-end justify-content-between">
+                                <a href="matrices.html#lifecycle-matrix" class="btn btn-sm btn-outline-success">查看矩陣</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 產品類型維度卡片 -->
+                <div class="col-lg-3 mb-5">
+                    <div class="card h-100 shadow border-0">
+                        <div class="card-body p-4">
+                            <div class="badge bg-info bg-gradient rounded-pill mb-2">產品類型</div>
+                            <h5 class="card-title mb-3">產品類型與財商水平</h5>
+                            <p class="card-text mb-0">
+                                探索不同產品類型（信用卡、存款、貸款、投資、財富管理、數位金融）與財商水平的配對關係。
+                            </p>
+                        </div>
+                        <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                            <div class="d-flex align-items-end justify-content-between">
+                                <a href="matrices.html#product-matrix" class="btn btn-sm btn-outline-info">查看矩陣</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 特殊情境維度卡片 -->
+                <div class="col-lg-3 mb-5">
+                    <div class="card h-100 shadow border-0">
+                        <div class="card-body p-4">
+                            <div class="badge bg-warning bg-gradient rounded-pill mb-2">特殊情境</div>
+                            <h5 class="card-title mb-3">特殊情境與財商水平</h5>
+                            <p class="card-text mb-0">
+                                了解特殊情境（打造被動收入、海外資金調度、稅務規劃、數位生活）下的客戶需求與產品配對。
+                            </p>
+                        </div>
+                        <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                            <div class="d-flex align-items-end justify-content-between">
+                                <a href="matrices.html#situation-matrix" class="btn btn-sm btn-outline-warning">查看矩陣</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 快速入口 -->
+    <section class="py-5 bg-light">
+        <div class="container px-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-8 col-xl-6">
+                    <div class="text-center">
+                        <h2 class="fw-bolder mb-5">快速入口</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-5">
+                <!-- 按角色入口 -->
+                <div class="col-lg-6 mb-5">
+                    <div class="card h-100 shadow border-0">
+                        <div class="card-body p-4">
+                            <h3 class="card-title mb-3">按角色查詢</h3>
+                            <p class="card-text mb-3">
+                                根據您的角色，快速找到相關資源和工具。
+                            </p>
+                            <div class="d-grid gap-2">
+                                <a href="#" class="btn btn-outline-primary">理財顧問</a>
+                                <a href="#" class="btn btn-outline-primary">產品經理</a>
+                                <a href="#" class="btn btn-outline-primary">行銷企劃</a>
+                                <a href="#" class="btn btn-outline-primary">客戶關係經理</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 按需求入口 -->
+                <div class="col-lg-6 mb-5">
+                    <div class="card h-100 shadow border-0">
+                        <div class="card-body p-4">
+                            <h3 class="card-title mb-3">按需求查詢</h3>
+                            <p class="card-text mb-3">
+                                根據您的具體需求，快速找到相關資源和工具。
+                            </p>
+                            <div class="d-grid gap-2">
+                                <a href="guides.html#literacy-assessment" class="btn btn-outline-success">評估客戶財商</a>
+                                <a href="guides.html#angle-selection" class="btn btn-outline-success">選擇行銷切角</a>
+                                <a href="cases.html" class="btn btn-outline-success">查看應用案例</a>
+                                <a href="profile-generator.html" class="btn btn-outline-success">生成客戶畫像</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 使用指南 -->
+    <section class="py-5">
+        <div class="container px-5">
+            <h2 class="fw-bolder mb-4">網站使用指南</h2>
+            <div class="row gx-5">
+                <div class="col-lg-4 mb-5">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 p-3">
+                        <i class="bi bi-grid-3x3"></i>
+                    </div>
+                    <h2 class="h5">探索配對矩陣</h2>
+                    <p class="mb-0">
+                        在「配對矩陣」頁面，您可以根據不同維度（風險偏好、生命週期等）查看客戶需求與產品特色的配對關係。點擊矩陣單元格可查看詳細配對建議。
+                    </p>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 p-3">
+                        <i class="bi bi-book"></i>
+                    </div>
+                    <h2 class="h5">學習財商與切角指南</h2>
+                    <p class="mb-0">
+                        在「財商與切角指南」頁面，您可以了解如何評估客戶財商水平、選擇適當的行銷切角，以及調整溝通內容和形式。
+                    </p>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 p-3">
+                        <i class="bi bi-person-vcard"></i>
+                    </div>
+                    <h2 class="h5">生成客戶畫像</h2>
+                    <p class="mb-0">
+                        使用「客戶畫像生成器」，回答一系列問題，生成個人化的客戶畫像，並獲取基於該畫像的產品推薦和行銷切角建議。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁腳 -->
+    <footer class="py-4 bg-dark">
+        <div class="container px-5">
+            <p class="m-0 text-center text-white">
+                &copy; 2025 銀行客戶需求與產品特色配對矩陣 | 版權所有
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- 自定義JS -->
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,17 +1,257 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>profile-generator.html</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/marketing-angles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>客戶畫像生成器 - 銀行客戶需求與產品特色配對矩陣</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- 導航欄 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-bank me-2"></i>銀行客戶需求與產品特色配對矩陣
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matrices.html">配對矩陣</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guides.html">財商與切角指南</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cases.html">應用案例</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="profile-generator.html">客戶畫像生成器</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">關於</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <h1>profile-generator.html 頁面</h1>
+    <!-- 頁面標題 -->
+    <header class="bg-light py-4">
+        <div class="container px-5">
+            <h1 class="fw-bolder">客戶畫像生成器</h1>
+            <p class="lead">
+                回答簡單問題，生成客戶畫像並獲取產品推薦和溝通策略建議。
+            </p>
+        </div>
+    </header>
 
-  <script src="js/profile-generator.js"></script>
-  <script src="js/common.js"></script>
-</body>
-</html>
+    <!-- 生成器內容 -->
+    <section class="py-5">
+        <div class="container px-5">
+            <div class="row gx-5">
+                <!-- 問題區域 -->
+                <div class="col-lg-8">
+                    <div class="profile-generator">
+                        <div id="questionContainer">
+                            <!-- 問題1：基本資訊 -->
+                            <div class="question-container" id="question1">
+                                <h4 class="question-title">1. 客戶基本資訊</h4>
+                                
+                                <div class="mb-3">
+                                    <label class="form-label">年齡範圍</label>
+                                    <div class="options-container">
+                                        <button class="btn btn-outline-primary option-btn" data-value="20-30">20-30歲</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="31-40">31-40歲</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="41-50">41-50歲</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="51-60">51-60歲</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="61+">61歲以上</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label class="form-label">家庭狀況</label>
+                                    <div class="options-container">
+                                        <button class="btn btn-outline-primary option-btn" data-value="single">單身</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="married-no-kids">已婚無子女</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="married-young-kids">已婚有幼兒</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="married-adult-kids">已婚子女成年</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="other">其他</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label class="form-label">職業類型</label>
+                                    <div class="options-container">
+                                        <button class="btn btn-outline-primary option-btn" data-value="employee">一般受雇者</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="manager">管理職</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="professional">專業人士</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="business-owner">企業主</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="retired">退休人士</button>
+                                    </div>
+                                </div>
+                                
+                                <button class="btn btn-primary mt-3" id="nextBtn1">下一步</button>
+                            </div>
+                            
+                            <!-- 問題2：財務狀況 -->
+                            <div class="question-container d-none" id="question2">
+                                <h4 class="question-title">2. 客戶財務狀況</h4>
+                                
+                                <div class="mb-3">
+                                    <label class="form-label">月收入範圍</label>
+                                    <div class="options-container">
+                                        <button class="btn btn-outline-primary option-btn" data-value="below-50k">5萬以下</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="50k-80k">5-8萬</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="80k-120k">8-12萬</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="120k-200k">12-20萬</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="above-200k">20萬以上</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label class="form-label">資產規模</label>
+                                    <div class="options-container">
+                                        <button class="btn btn-outline-primary option-btn" data-value="below-1m">100萬以下</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="1m-3m">100-300萬</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="3m-10m">300萬-1000萬</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="10m-30m">1000萬-3000萬</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="above-30m">3000萬以上</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label class="form-label">負債情況</label>
+                                    <div class="options-container">
+                                        <button class="btn btn-outline-primary option-btn" data-value="no-debt">無負債</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="mortgage">房貸</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="car-loan">車貸</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="multiple-loans">多項貸款</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="high-debt">高負債</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="d-flex justify-content-between mt-3">
+                                    <button class="btn btn-secondary" id="prevBtn2">上一步</button>
+                                    <button class="btn btn-primary" id="nextBtn2">下一步</button>
+                                </div>
+                            </div>
+                            
+                            <!-- 問題3：財商與需求 -->
+                            <div class="question-container d-none" id="question3">
+                                <h4 class="question-title">3. 客戶財商與需求</h4>
+                                
+                                <div class="mb-3">
+                                    <label class="form-label">金融產品使用經驗</label>
+                                    <div class="options-container">
+                                        <button class="btn btn-outline-primary option-btn" data-value="basic">僅使用基本存款和信用卡</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="intermediate">有基金或保險投資經驗</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="advanced">有多元投資經驗</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="expert">有複雜金融產品經驗</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label class="form-label">風險偏好</label>
+                                    <div class="options-container">
+                                        <button class="btn btn-outline-primary option-btn" data-value="conservative">保守型</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="moderate">穩健型</button>
+                                        <button class="btn btn-outline-primary option-btn" data-value="aggressive">積極型</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label class="form-label">主要財務需求 (可多選)</label>
+                                    <div class="options-container">
+                                        <button class="btn btn-outline-primary option-btn multi-select" data-value="savings">儲蓄與流動性</button>
+                                        <button class="btn btn-outline-primary option-btn multi-select" data-value="investment">投資增值</button>
+                                        <button class="btn btn-outline-primary option-btn multi-select" data-value="loan">融資需求</button>
+                                        <button class="btn btn-outline-primary option-btn multi-select" data-value="retirement">退休規劃</button>
+                                        <button class="btn btn-outline-primary option-btn multi-select" data-value="passive-income">被動收入</button>
+                                        <button class="btn btn-outline-primary option-btn multi-select" data-value="overseas">海外資金</button>
+                                        <button class="btn btn-outline-primary option-btn multi-select" data-value="tax">稅務規劃</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="d-flex justify-content-between mt-3">
+                                    <button class="btn btn-secondary" id="prevBtn3">上一步</button>
+                                    <button class="btn btn-success" id="generateBtn">生成客戶畫像</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 結果區域 -->
+                        <div id="resultContainer" class="d-none">
+                            <h4 class="mb-4">客戶畫像分析結果</h4>
+                            
+                            <div class="result-container">
+                                <div class="row mb-4">
+                                    <div class="col-md-6">
+                                        <h5>客戶基本畫像</h5>
+                                        <div id="profileBasic"></div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5>財商水平評估</h5>
+                                        <div id="literacyLevel"></div>
+                                    </div>
+                                </div>
+                                
+                                <hr>
+                                
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <h5>需求分析</h5>
+                                        <div id="needsAnalysis"></div>
+                                    </div>
+                                </div>
+                                
+                                <hr>
+                                
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <h5>產品推薦</h5>
+                                        <div id="productRecommendations"></div>
+                                    </div>
+                                </div>
+                                
+                                <hr>
+                                
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h5>溝通策略建議</h5>
+                                        <div id="communicationStrategy"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="d-flex justify-content-between mt-4">
+                                    <button class="btn btn-primary" id="restartBtn">重新開始</button>
+                                    <button class="btn btn-success" id="saveResultBtn">儲存結果</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 側邊說明 -->
+                <div class="col-lg-4">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">使用說明</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>客戶畫像生成器可幫助您：</p>
+                            <ul>
+                                <li>快速建立客戶財務畫像</li>
+                                <li>評估客戶財商水平</li>
+                                <li>分析客戶多層次需求</li>
+                                <li>獲取適合的產品推薦</li>
+                                <li>提供有效的溝通策略</li>
+                            </ul>
+                          <response clipped><NOTE>To save on context only part of this file has been shown to you. You should retry this tool after you have searched inside the file with `grep -n` in order to find the line numbers of what you are looking for.</NOTE>

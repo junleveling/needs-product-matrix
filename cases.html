@@ -1,17 +1,308 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>cases.html</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/marketing-angles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>應用案例 - 銀行客戶需求與產品特色配對矩陣</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- 導航欄 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-bank me-2"></i>銀行客戶需求與產品特色配對矩陣
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matrices.html">配對矩陣</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guides.html">財商與切角指南</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cases.html">應用案例</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile-generator.html">客戶畫像生成器</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">關於</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <h1>cases.html 頁面</h1>
+    <!-- 頁面標題 -->
+    <header class="bg-light py-4">
+        <div class="container px-5">
+            <h1 class="fw-bolder">應用案例</h1>
+            <p class="lead">
+                探索不同財商水平客戶的實際應用案例，了解如何根據客戶特性選擇適當的產品和溝通策略。
+            </p>
+        </div>
+    </header>
 
-  <script src="js/cases.js"></script>
-  <script src="js/common.js"></script>
-</body>
-</html>
+    <!-- 案例篩選 -->
+    <section class="py-3">
+        <div class="container px-5">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <select class="form-select" id="financialLiteracyFilter">
+                        <option value="all">所有財商水平</option>
+                        <option value="basic">初階財商客戶</option>
+                        <option value="intermediate">中階財商客戶</option>
+                        <option value="advanced">高階財商客戶</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <select class="form-select" id="needTypeFilter">
+                        <option value="all">所有需求類型</option>
+                        <option value="basic">基本財務需求</option>
+                        <option value="extended">延伸財務需求</option>
+                        <option value="special">特殊情境需求</option>
+                        <option value="passive-income">打造現金流/被動收入需求</option>
+                        <option value="overseas">海外資金調度需求</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 案例卡片 -->
+    <section class="py-4">
+        <div class="container px-5">
+            <div class="row" id="casesContainer">
+                <!-- 初階財商客戶案例 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-literacy="basic" data-need="basic">
+                    <div class="card case-card h-100" data-case-id="case1">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">初階財商客戶</span>
+                            <span class="badge bg-secondary mb-2">基本財務需求</span>
+                            <h4 class="card-title">初入職場年輕族群</h4>
+                            <p class="card-text">25-30歲，初入職場1-3年，單身，租屋居住，收入穩定但有限，具備基本理財知識。</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-primary view-case-btn">查看詳情</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-literacy="basic" data-need="passive-income">
+                    <div class="card case-card h-100" data-case-id="case2">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">初階財商客戶</span>
+                            <span class="badge bg-warning mb-2">被動收入需求</span>
+                            <h4 class="card-title">小資族被動收入需求</h4>
+                            <p class="card-text">30-35歲，小資上班族，希望建立穩定的被動收入來源，但對投資知識有限，風險承受度中低。</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-primary view-case-btn">查看詳情</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 中階財商客戶案例 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-literacy="intermediate" data-need="extended">
+                    <div class="card case-card h-100" data-case-id="case3">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">中階財商客戶</span>
+                            <span class="badge bg-info mb-2">延伸財務需求</span>
+                            <h4 class="card-title">成家立業中產階級</h4>
+                            <p class="card-text">35-45歲，已婚有幼兒，考慮購屋或已購屋，事業發展期，收入穩定成長，有基本投資經驗。</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-primary view-case-btn">查看詳情</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-literacy="intermediate" data-need="overseas">
+                    <div class="card case-card h-100" data-case-id="case4">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">中階財商客戶</span>
+                            <span class="badge bg-danger mb-2">海外資金需求</span>
+                            <h4 class="card-title">子女海外教育規劃</h4>
+                            <p class="card-text">40-50歲，子女即將出國留學，需要規劃海外教育資金和跨國資金調度，有一定投資經驗。</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-primary view-case-btn">查看詳情</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 高階財商客戶案例 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-literacy="advanced" data-need="special">
+                    <div class="card case-card h-100" data-case-id="case5">
+                        <div class="card-body">
+                            <span class="badge bg-dark mb-2">高階財商客戶</span>
+                            <span class="badge bg-secondary mb-2">特殊情境需求</span>
+                            <h4 class="card-title">事業有成高資產客戶</h4>
+                            <p class="card-text">45-60歲，事業高峰期，家庭成熟期，資產豐厚，具備豐富投資經驗，關注資產配置與傳承。</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-primary view-case-btn">查看詳情</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-literacy="advanced" data-need="passive-income">
+                    <div class="card case-card h-100" data-case-id="case6">
+                        <div class="card-body">
+                            <span class="badge bg-dark mb-2">高階財商客戶</span>
+                            <span class="badge bg-warning mb-2">被動收入需求</span>
+                            <h4 class="card-title">退休前被動收入規劃</h4>
+                            <p class="card-text">55-65歲，退休準備期，尋求建立穩定且可持續的被動收入來源，替代工作收入，具備豐富投資知識。</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-primary view-case-btn">查看詳情</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 案例詳情模態框 -->
+    <div class="modal fade" id="caseDetailModal" tabindex="-1" aria-labelledby="caseDetailModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="caseDetailModalLabel">案例詳情</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 案例1詳情 -->
+                    <div class="case-detail" id="case1-detail">
+                        <h4>初入職場年輕族群</h4>
+                        <div class="mb-4">
+                            <span class="badge bg-primary">初階財商客戶</span>
+                            <span class="badge bg-secondary">基本財務需求</span>
+                        </div>
+                        
+                        <h5>客戶畫像</h5>
+                        <ul>
+                            <li><strong>年齡：</strong>25-30歲</li>
+                            <li><strong>職業：</strong>初入職場1-3年</li>
+                            <li><strong>家庭狀況：</strong>單身，租屋居住</li>
+                            <li><strong>財務狀況：</strong>收入穩定但有限</li>
+                            <li><strong>財商水平：</strong>具備基本理財知識，但投資經驗有限</li>
+                            <li><strong>風險偏好：</strong>中低風險</li>
+                        </ul>
+                        
+                        <h5>核心需求</h5>
+                        <div class="row mb-4">
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <div class="card-header bg-light">基本需求</div>
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>日常交易便利性</li>
+                                            <li>小額儲蓄累積</li>
+                                            <li>緊急備用金建立</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <div class="card-header bg-light">延伸需求</div>
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>初步投資嘗試</li>
+                                            <li>建立信用紀錄</li>
+                                            <li>基本風險保障</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <div class="card-header bg-light">隱性需求</div>
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>社會認同感</li>
+                                            <li>財務獨立感</li>
+                                            <li>科技生活形象</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h5>產品配對</h5>
+                        <div class="table-responsive mb-4">
+                            <table class="table table-bordered">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>產品</th>
+                                        <th>基本特色</th>
+                                        <th>延伸價值</th>
+                                        <th>配對理由</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>數位銀行帳戶</strong></td>
+                                        <td>零手續費、高利活存、線上開戶</td>
+                                        <td>行動支付整合、消費分析工具</td>
+                                        <td>滿足便利性需求，同時提供數位生活形象</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>自動化定期定額投資計劃</strong></td>
+                                        <td>小額投資門檻、自動扣款</td>
+                                        <td>強制儲蓄習慣養成、長期複利效果</td>
+                                        <td>培養投資習慣，同時滿足財務成長需求</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>入門級信用卡</strong></td>
+                                        <td>基本消費回饋、簡易申請條件</td>
+                                        <td>建立信用歷史、生活消費優惠</td>
+                                        <td>協助建立信用紀錄，提供社會認同感</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <h5>溝通切入點</h5>
+                        <div class="row mb-4">
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <div class="card-header bg-primary text-white">主要行銷切角</div>
+                                    <div class="card-body">
+                                        <ul>
+                                            <li><strong>生活情境切角</strong><br>連結年輕人日常生活場景</li>
+                                            <li><strong>情感訴求切角</strong><br>強調財務獨立感</li>
+                                            <li><strong>教育啟發切角</strong><br>提供基礎理財知識</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card h-100">
+                                    <div class="card-header bg-info text-white">溝通策略</div>
+                                    <div class="card-body">
+                                        <ul>
+   <response clipped><NOTE>To save on context only part of this file has been shown to you. You should retry this tool after you have searched inside the file with `grep -n` in order to find the line numbers of what you are looking for.</NOTE>
