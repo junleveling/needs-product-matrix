@@ -1,0 +1,57 @@
+[
+  {
+    "id": "prod_credit_card",
+    "name": "信用卡",
+    "category": "信用卡產品",
+    "features": {
+      "basic": [
+        "日常消費支付工具",
+        "短期資金靈活運用"
+      ],
+      "extended": [
+        "消費回饋獲取",
+        "消費理財規劃"
+      ],
+      "differentiated": [
+        "社會地位認同",
+        "專屬禮遇與服務"
+      ]
+    }
+  },
+  {
+    "id": "prod_saving",
+    "name": "定期存款",
+    "category": "存款產品",
+    "features": {
+      "basic": [
+        "安全存放現金",
+        "穩定利息收入"
+      ],
+      "extended": [
+        "資產保值",
+        "短期資金規劃"
+      ],
+      "differentiated": [
+        "財務安全感",
+        "抗通膨心理需求"
+      ]
+    }
+  },
+  {
+    "id": "prod_annuity",
+    "name": "年金保險",
+    "category": "保險產品",
+    "features": {
+      "basic": [
+        "退休收入來源"
+      ],
+      "extended": [
+        "通膨對沖策略"
+      ],
+      "differentiated": [
+        "長期照護保障",
+        "資產傳承工具"
+      ]
+    }
+  }
+]

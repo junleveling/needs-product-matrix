@@ -1,0 +1,1 @@
+export default function ProductFeatures() { return <div className='p-4'>This is the ProductFeatures page.</div>; }
