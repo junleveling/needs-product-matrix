@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>產品特色 - 客戶需求 × 產品適配</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+    /* 綠字綠框白底按鈕樣式 */
+    .btn-outline-custom {
+        color: var(--primary-color);
+        background-color: #ffffff;
+        border-color: var(--primary-color);
+        transition: all 0.3s ease;
+    }
+    
+    /* 懸停時變成綠底白字 */
+    .btn-outline-custom:hover {
+        color: #ffffff;
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+    }
+    
+    /* 活動狀態（點擊時）樣式 */
+    .btn-outline-custom:active,
+    .btn-outline-custom:focus {
+        color: #ffffff;
+        background-color: var(--primary-dark);
+        border-color: var(--primary-dark);
+        box-shadow: 0 0 0 0.2rem rgba(38, 168, 98, 0.25);
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">客戶需求 × 產品適配</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="customer-needs.html">客戶需求</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="product-features.html">產品特色</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matching-framework.html">配對框架</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matching-matrix.html">配對矩陣</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-gray">
+        <div class="container">
+            <h1 class="display-4 fw-bold">產品特色</h1>
+            <p class="lead">了解各類金融產品的特色與優勢，找出最適合客戶需求的解決方案</p>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="card h-100 product-card">
+                        <div class="card-body">
+                            <span class="feature-level">基本特色</span>
+                            <h3 class="card-title" style="font-size:1.4rem;">基本財務需求滿足</h3>
+                            <p>產品的核心功能，直接滿足客戶的基本財務需求。這是產品存在的基本價值，也是客戶選擇產品的首要考量。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 product-card">
+                        <div class="card-body">
+                            <span class="feature-level">延伸價值</span>
+                            <h3 class="card-title" style="font-size:1.4rem;">延伸財務需求滿足</h3>
+                            <p>產品提供的附加價值，滿足客戶的進階財務需求。這些特色增強產品的吸引力，提供更全面的解決方案。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 product-card">
+                        <div class="card-body">
+                            <span class="feature-level">差異化優勢</span>
+                            <h3 class="card-title" style="font-size:1.4rem;">隱性需求滿足</h3>
+                            <p>產品的獨特優勢，滿足客戶未明確表達的隱性需求。這些特色是產品的競爭優勢，能創造更深層的客戶價值。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">存款產品</h2>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <span class="feature-level">基本特色</span>
+                            <h3 class="card-title" style="font-size:1.4rem;">基本財務需求滿足</h3>
+                            <ul>
+                                <li>日常資金調度</li>
+                                <li>安全存放現金</li>
+                                <li>獲取穩定利息收入</li>
+                                <li>外幣資金存放</li>
+                                <li>匯率風險管理</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <span class="feature-level">延伸價值</span>
+                            <h3 class="card-title" style="font-size:1.4rem;">延伸財務需求滿足</h3>
+                            <ul>
+                                <li>短期資金規劃</li>
+                                <li>中期資金規劃</li>
+                                <li>資產多元化配置</li>
+                                <li>匯率波動獲利</li>
+                                <li>數位生活整合</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <span class="feature-level">差異化優勢</span>
+                            <h3 class="card-title" style="font-size:1.4rem;">隱性需求滿足</h3>
+                            <ul>
+                                <li>財務安全感（存款保障）</li>
+                                <li>控制感（資金掌握）</li>
+                                <li>抗通膨心理需求（特殊存款方案）</li>
+                                <li>跨國生活便利（多幣別帳戶）</li>
+                                <li>數位身分認同（創新存款產品）</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+              <a href="https://www.cathaybk.com.tw/cathaybk/personal/product/deposit/one-account/" class="btn btn-outline-custom btn-lg mt-3">台外幣帳戶</a>
+              <a href="https://www.cathaybk.com.tw/cathaybk/personal/digital-service/intro/foreign-currency/" class="btn btn-outline-custom btn-lg mt-3">外幣服務</a>
+              <a href="https://www.cathaybk.com.tw/cathaybk/personal/digital-service/intro/atmservice/" class="btn btn-outline-custom btn-lg mt-3">ATM 服務</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">數位金融服務</h2>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <span class="feature-level">基本特色</span>
+                            <h3 class="card-title" style="font-size:1.4rem;">基本財務需求滿足</h3>
+                            <ul>
+                                <li>即時銀行服務</li>
+                                <li>帳戶即時監控</li>
+                                <li>現金取得便利性</li>
+                                <li>便利開戶體驗</li>
+                                <li>專業金融諮詢</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <span class="feature-level">延伸價值</span>
+                            <h3 class="card-title" style="font-size:1.4rem;">延伸財務需求滿足</h3>
+                            <ul>
+                                <li>數位生活整合</li>
+                                <li>個人財務分析</li>
+                                <li>無卡生活</li>
+                                <li>環保永續</li>
+                                <li>特殊情境金融需求</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <span class="feature-level">差異化優勢</span>
+                            <h3 class="card-title" style="font-size:1.4rem;">隱性需求滿足</h3>
+                            <ul>
+                                <li>科技生活型態</li>
+                                <li>提升控制感</li>
+                                <li>追求效率</li>
+                                <li>個人化體驗</li>
+                                <li>隱私與安全感</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+              <a href="https://www.cathaybk.com.tw/cathaybk/personal/digital-service/intro/digital-finance/" class="btn btn-outline-custom btn-lg mt-3">數位服務</a>
+              <a href="https://www.cathaybk.com.tw/cathaybk/personal/digital-service/intro/line/" class="btn btn-outline-custom btn-lg mt-3">LINE 服務</a>
+              <a href="https://www.cathaybk.com.tw/cathaybk/personal/digital-service/intro/online/" class="btn btn-outline-custom btn-lg mt-3">線上服務總覽</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">信用卡產品</h2>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <span class="feature-level">基本特色</span>
+                            <h3 class="card-title" style="font-size:1.4rem;">基本財務需求滿足</h3>
+                            <ul>
+                                <li>日常消費支付工具</li>
+                                <li>短期資金靈活運用</li>
+                                <li>降低消費實質成本</li>
+                                <li>旅遊風險保障</li>
+                                <li>數位消費便利性</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <span class="feature-level">延伸價值</span>
+                            <h3 class="card-title" style="font-size:1.4rem;">延伸財務需求滿足</h3>
+                            <ul>
+                                <li>消費回饋獲取</li>
+                                <li>消費理財規劃</li>
+                                <li>長期哩程累積與規劃</li>
+                                <li>提升旅遊品質與體驗</li>
+                                <li>數位生活整合需求</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <span class="feature-level">差異化優勢</span>
+                            <h3 class="card-title" style="font-size:1.4rem;">隱性需求滿足</h3>
+                            <ul>
+                                <li>社會地位認同（高級卡別）</li>
+                                <li>專屬禮遇與服務（VIP待遇）</li>
+                                <li>生活型態表達（卡片設計與品牌）</li>
+                                <li>消費成就感（累積回饋）</li>
+                                <li>安全感提升（詐騙防護）</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+              <a href="https://www.cathaybk.com.tw/cathaybk/personal/product/credit-card/cards/" class="btn btn-outline-custom btn-lg mt-3">信用卡介紹</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">投資/信託/保險產品</h2>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <span class="feature-level">基本特色</span>
+                            <h3 class="card-title" style="font-size:1.4rem;">基本財務需求滿足</h3>
+                            <ul>
+                                <li>資產增值需求</li>
+                                <li>專業投資管理</li>
+                                <li>風險分散需求</li>
+                                <li>穩定收益來源</li>
+                                <li>人身風險保障</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <span class="feature-level">延伸價值</span>
+                            <h3 class="card-title" style="font-size:1.4rem;">延伸財務需求滿足</h3>
+                            <ul>
+                                <li>退休金累積</li>
+                                <li>子女教育金準備</li>
+                                <li>通膨對沖策略</li>
+                                <li>特定市場投資策略執行</li>
+                                <li>財富傳承安排</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <span class="feature-level">差異化優勢</span>
+                            <h3 class="card-title" style="font-size:1.4rem;">隱性需求滿足</h3>
+                            <ul>
+                                <li>投資成就感（績效表現）</li>
+                                <li>專業依賴需求（專家管理）</li>
+                                <li>風險控制感（多元配置）</li>
+                                <li>財務自由渴望（被動收入）</li>
+                                <li>價值觀表達（ESG投資）</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+              <a href="https://www.cathaybk.com.tw/cathaybk/personal/investment/fund/" class="btn btn-outline-custom btn-lg mt-3">基金</a>
+              <a href="https://www.cathaybk.com.tw/cathaybk/personal/investment/offshore-bond/" class="btn btn-outline-custom btn-lg mt-3">海外債</a>
+              <a href="https://www.cathayrobo.com/welcome/" class="btn btn-outline-custom btn-lg mt-3">Robo</a>
+              <a href="https://www.cathaybk.com.tw/cathaybk/personal/wealth/trust/product/" class="btn btn-outline-custom btn-lg mt-3">信託</a>
+              <a href="https://www.cathaybk.com.tw/cathaybk/personal/insurance/" class="btn btn-outline-custom btn-lg mt-3">保險</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">財富管理服務</h2>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <span class="feature-level">基本特色</span>
+                            <h3 class="card-title" style="font-size:1.4rem;">基本財務需求滿足</h3>
+                            <ul>
+                                <li>專業投資建議</li>
+                                <li>資產配置最佳化</li>
+                                <li>退休金累積</li>
+                                <li>合法節稅需求</li>
+                                <li>資產傳承規劃</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <span class="feature-level">延伸價值</span>
+                            <h3 class="card-title" style="font-size:1.4rem;">延伸財務需求滿足</h3>
+                            <ul>
+                                <li>家族財富規劃</li>
+                                <li>全球資產配置</li>
+                                <li>退休生活品質保障</li>
+                                <li>家族企業傳承</li>
+                                <li>跨國資產管理</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <span class="feature-level">差異化優勢</span>
+                            <h3 class="card-title" style="font-size:1.4rem;">隱性需求滿足</h3>
+                            <ul>
+                                <li>社會精英認同（私人銀行身分）</li>
+                                <li>專業依賴與信任（顧問關係）</li>
+                                <li>生命意義延續（傳承規劃）</li>
+                                <li>家族使命實現（慈善規劃）</li>
+                                <li>全球公民身分（國際視野）</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+              <a href="https://www.cathaybk.com.tw/cathaybk/personal/product/wealth/vip/" class="btn btn-outline-custom btn-lg mt-3">財富管理</a>
+              <a href="https://www.cathaybk.com.tw/cathaybk/personal/product/wealth/vip/rights/#tab3" class="btn btn-outline-custom btn-lg mt-3">黃金 VIP</a>
+              <a href="https://www.cathaybk.com.tw/cathaybk/personal/product/wealth/vip/rights/#tab4" class="btn btn-outline-custom btn-lg mt-3">白金 VIP</a>
+              <a href="https://www.cathaybk.com.tw/cathaybk/personal/product/wealth/vip/rights/#tab5" class="btn btn-outline-custom btn-lg mt-3">鑽石 VIP</a>
+              <a href="https://www.cathaybk.com.tw/cathaybk/personal/wealth/" class="btn btn-outline-custom btn-lg mt-3">財富管理專刊</a>
+              <a href="https://www.cathaybk.com.tw/cathaybk/promo/event/investment/RetireEasy/retire-calculating.html#calculator" class="btn btn-outline-custom btn-lg mt-3">嚮退試算</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">貸款產品</h2>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <span class="feature-level">基本特色</span>
+                            <h3 class="card-title" style="font-size:1.4rem;">基本財務需求滿足</h3>
+                            <ul>
+                                <li>短期資金需求</li>
+                                <li>緊急資金周轉</li>
+                                <li>購置住宅資金</li>
+                                <li>交通工具購置資金</li>
+                                <li>投資資金取得</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <span class="feature-level">延伸價值</span>
+                            <h3 class="card-title" style="font-size:1.4rem;">延伸財務需求滿足</h3>
+                            <ul>
+                                <li>個人投資機會把握</li>
+                                <li>資產配置多元化</li>
+                                <li>房產投資槓桿運用</li>
+                                <li>提升生活品質</li>
+                                <li>財富加速累積</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <span class="feature-level">差異化優勢</span>
+                            <h3 class="card-title" style="font-size:1.4rem;">隱性需求滿足</h3>
+                            <ul>
+                                <li>生活願景實現（家庭成立）</li>
+                                <li>社會地位提升（資產擁有）</li>
+                                <li>自我實現需求（創業支持）</li>
+                                <li>家庭責任履行（子女教育）</li>
+                                <li>財務彈性與控制感（靈活還款）</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">開始使用適配工具</h2>
+                    <p class="lead mb-4">精準匹配客戶需求與金融產品，提供最佳解決方案</p>
+                    <a href="matching-matrix.html" class="btn btn-primary btn-lg mt-3">立即前往</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>網站管理員 HOOK<br>© 2025 客戶需求 × 產品適配 版權所有</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

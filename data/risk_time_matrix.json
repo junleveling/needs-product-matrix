@@ -1,0 +1,206 @@
+{
+  "matrix_type": "risk_time",
+  "risk_preferences": ["保守型", "穩健型", "積極型"],
+  "time_dimensions": ["短期（1年以內）", "中期（1-5年）", "長期（5年以上）"],
+  "mappings": [
+    {
+      "risk": "保守型",
+      "time": "短期（1年以內）",
+      "products": [
+        {
+          "name": "活期存款帳戶",
+          "features": ["日常資金調度", "安全存放現金"],
+          "priority": 1
+        },
+        {
+          "name": "定期存款",
+          "features": ["獲取穩定利息收入", "安全存放現金"],
+          "priority": 2
+        },
+        {
+          "name": "短期儲蓄型保險",
+          "features": ["保障與儲蓄兼顧", "資金安全性高"],
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "risk": "保守型",
+      "time": "中期（1-5年）",
+      "products": [
+        {
+          "name": "定期存款",
+          "features": ["獲取穩定利息收入", "資產保值功能"],
+          "priority": 1
+        },
+        {
+          "name": "儲蓄型保險",
+          "features": ["保障與儲蓄兼顧", "中期資金規劃"],
+          "priority": 2
+        },
+        {
+          "name": "年金保險（部分）",
+          "features": ["提供穩定收益", "保本保息"],
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "risk": "保守型",
+      "time": "長期（5年以上）",
+      "products": [
+        {
+          "name": "儲蓄型保險",
+          "features": ["長期資金累積", "財富傳承規劃"],
+          "priority": 1
+        },
+        {
+          "name": "年金保險",
+          "features": ["退休收入來源", "長期穩定給付"],
+          "priority": 2
+        },
+        {
+          "name": "退休投資組合（保守配置）",
+          "features": ["長期資產保全", "穩定收益為主"],
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "risk": "穩健型",
+      "time": "短期（1年以內）",
+      "products": [
+        {
+          "name": "活期存款帳戶",
+          "features": ["日常資金調度", "基本理財需求"],
+          "priority": 1
+        },
+        {
+          "name": "定期存款",
+          "features": ["短期資金規劃", "較活期更高收益"],
+          "priority": 2
+        },
+        {
+          "name": "外幣存款",
+          "features": ["匯率風險管理", "資產多元化配置"],
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "risk": "穩健型",
+      "time": "中期（1-5年）",
+      "products": [
+        {
+          "name": "多元資產配置基金",
+          "features": ["分散投資風險", "平衡風險與報酬"],
+          "priority": 1
+        },
+        {
+          "name": "海外債券",
+          "features": ["穩定收益來源", "全球資產配置"],
+          "priority": 2
+        },
+        {
+          "name": "投資型保險（穩健配置）",
+          "features": ["保障與投資兼顧", "中期資產增值"],
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "risk": "穩健型",
+      "time": "長期（5年以上）",
+      "products": [
+        {
+          "name": "共同基金（穩健型）",
+          "features": ["專業投資管理", "長期資產增值"],
+          "priority": 1
+        },
+        {
+          "name": "ETF（穩健型）",
+          "features": ["低成本參與市場", "長期穩定成長"],
+          "priority": 2
+        },
+        {
+          "name": "退休投資組合",
+          "features": ["長期財富累積", "退休規劃核心"],
+          "priority": 3
+        },
+        {
+          "name": "房屋貸款（資產累積）",
+          "features": ["長期資產建立", "抗通膨資產"],
+          "priority": 4
+        }
+      ]
+    },
+    {
+      "risk": "積極型",
+      "time": "短期（1年以內）",
+      "products": [
+        {
+          "name": "外幣存款",
+          "features": ["匯率波動獲利", "短期資金靈活運用"],
+          "priority": 1
+        },
+        {
+          "name": "ETF（短期交易）",
+          "features": ["市場機會把握", "靈活進出市場"],
+          "priority": 2
+        },
+        {
+          "name": "信用貸款（創業資金）",
+          "features": ["創業機會把握", "資金靈活運用"],
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "risk": "積極型",
+      "time": "中期（1-5年）",
+      "products": [
+        {
+          "name": "共同基金（積極型）",
+          "features": ["追求較高報酬", "把握市場成長機會"],
+          "priority": 1
+        },
+        {
+          "name": "ETF（積極型）",
+          "features": ["產業主題投資", "市場趨勢參與"],
+          "priority": 2
+        },
+        {
+          "name": "投資型保險（積極配置）",
+          "features": ["保障與積極投資", "資產快速增值"],
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "risk": "積極型",
+      "time": "長期（5年以上）",
+      "products": [
+        {
+          "name": "共同基金（積極型）",
+          "features": ["長期高成長潛力", "複利效果最大化"],
+          "priority": 1
+        },
+        {
+          "name": "ETF（積極型）",
+          "features": ["長期市場參與", "全球成長機會"],
+          "priority": 2
+        },
+        {
+          "name": "海外債券",
+          "features": ["全球收益來源", "長期資產配置"],
+          "priority": 3
+        },
+        {
+          "name": "財富管理服務（積極配置）",
+          "features": ["全方位資產管理", "專業投資建議"],
+          "priority": 4
+        }
+      ]
+    }
+  ]
+}

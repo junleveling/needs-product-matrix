@@ -1,0 +1,380 @@
+:root {
+    --primary-color: #26a862;
+    --primary-dark: #1e8a4e;
+    --primary-light: #4cba7d;
+    --primary-very-light: #e8f5ee;
+    --secondary-color: #26a862;
+    --text-color: #333333;
+    --light-text: #ffffff;
+    --background-light: #f8f9fa;
+    --border-color: #dee2e6;
+}
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 10px rgba(0, 38, 14, 0.15); /* 加深陰影效果 */
+    padding: 15px 0; /* 增加內邊距 */
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--light-text);
+    margin-right: 2rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 500;
+    padding: 10px 15px; /* 更改內邊距 */
+    margin: 0 5px; /* 更改外邊距 */
+    border-radius: 5px; /* 增加圓角 */
+    transition: all 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--light-text);
+    background-color: rgba(23, 92, 55, 0.25); /* 半透明懸停效果 */
+    transform: translateY(-2px); /* 添加懸停時的上移效果 */
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--light-text);
+    background-color: rgba(23, 92, 55, 0.4); /* 稍微深一點的背景色 */
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: var(--light-text);
+    padding: 8rem 0 5rem;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    margin-bottom: 1.5rem;
+}
+
+.hero .btn-primary {
+    background-color: #ffffff;
+    color: var(--primary-color);
+    border-color: #ffffff;
+    font-weight: 600;
+}
+
+.hero .btn-primary:hover {
+    background-color: var(--primary-very-light);
+    color: var(--primary-dark);
+    border-color: var(--primary-very-light);
+}
+
+.hero .btn-outline-light:hover {
+    color: var(--primary-color);
+}
+
+/* Hero 區域的灰底黑字樣式 */
+.hero-gray {
+    background-color: #f5f5f5;
+    color: #333333;
+    padding: 8rem 0 3rem; /* 從 8rem 0 5rem 改為 6rem 0 3rem，減少上下間距 */
+    margin-bottom: 1rem; /* 從 2rem 改為 1rem，減少底部邊距 */
+}
+
+/* 保留原有按鈕樣式，但在灰色背景上使用綠色邊框 */
+.hero-gray .btn-outline-light {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.hero-gray .btn-outline-light:hover {
+    color: #ffffff;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+
+/* Features Section */
+.features {
+    padding: 5rem 0;
+}
+
+.feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    background-color: var(--primary-very-light);
+    border-radius: 50%;
+}
+
+.card {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* 標籤頁樣式 */
+.nav-tabs {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-tabs .nav-link {
+    color: var(--text-color);
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: var(--primary-light);
+    color: var(--primary-color);
+}
+
+.nav-tabs .nav-link.active {
+    color: #ffffff;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Matrix Preview Section */
+.matrix-preview {
+    padding: 5rem 0;
+}
+
+.matrix-preview-img {
+    background-color: var(--primary-very-light);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--secondary-color); /* 現在與導航欄相同顏色 */
+    color: rgba(255, 255, 255, 0.9);
+    padding: 20px 0; /* 減少填充，使之更簡潔 */
+    box-shadow: 0 -2px 10px rgba(0, 38, 14, 0.15); /* 添加頂部陰影 */
+}
+
+.footer p {
+    margin: 0;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.footer h5 {
+    color: var(--light-text);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: var(--light-text);
+}
+
+.list-inline-item:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+/* Customer Needs Page */
+.page-header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: var(--light-text);
+    padding: 8rem 0 3rem;
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.need-card {
+    height: 100%;
+    border-left: 4px solid var(--primary-color);
+}
+
+.need-category {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Product Features Page */
+.product-card {
+    height: 100%;
+    border-top: 4px solid var(--primary-color);
+}
+
+.feature-level {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background-color: var(--primary-very-light);
+    color: var(--primary-color);
+    border-radius: 4px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+/* Matching Framework Page */
+.framework-card {
+    margin-bottom: 2rem;
+}
+
+.framework-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Matching Matrix Page */
+.matrix-container {
+    overflow-x: auto;
+    margin-bottom: 2rem;
+}
+
+.matrix-table {
+    min-width: 800px;
+}
+
+.matrix-table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.matrix-cell {
+    transition: all 0.3s ease;
+}
+
+.matrix-cell.highlight {
+    background-color: #CAE5BF;
+    color: var(--text-color);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    z-index: 1;
+    position: relative;
+}
+
+.need-selector {
+    margin-bottom: 2rem;
+}
+
+.need-checkbox {
+    margin-right: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .hero {
+        padding: 7rem 0 4rem;
+    }
+    
+    .feature-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.8rem;
+    }
+    
+    .navbar-dark .navbar-nav .nav-link {
+        padding: 12px 5px;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 6rem 0 3rem;
+        text-align: center;
+    }
+    
+    .hero .btn-group {
+        justify-content: center;
+    }
+    
+    .matrix-preview {
+        text-align: center;
+    }
+    
+    .matrix-preview-img {
+        margin-top: 2rem;
+    }
+    
+    .footer {
+        text-align: center;
+    }
+    
+    .footer .text-md-end {
+        text-align: center !important;
+        margin-top: 2rem;
+    }
+    
+    .list-inline-item {
+        margin: 0 0.75rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .feature-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+}

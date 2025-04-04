@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>配對框架 - 客戶需求 × 產品適配</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">客戶需求 × 產品適配</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="customer-needs.html">客戶需求</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product-features.html">產品特色</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="matching-framework.html">配對框架</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matching-matrix.html">配對矩陣</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-gray">
+        <div class="container">
+            <h1 class="display-4 fw-bold">配對框架</h1>
+            <p class="lead">從多個維度考量客戶需求與產品特色的匹配，精準連結以提供最適解決方案</p>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+
+            <div class="row g-4 mb-5">
+                <div class="col-lg-6">
+                    <div class="card h-100 framework-card">
+                        <div class="card-body">
+                            <div class="framework-icon">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                            <h3 class="card-title" style="font-size:1.4rem;">層次維度配對</h3>
+                            <p>根據需求與產品特色的層次進行配對，確保從基本到進階的全面匹配。</p>
+                            <div class="mt-4">
+                                <h5>基本特色 ↔ 基本財務需求</h5>
+                                <ul>
+                                    <li>產品的核心功能與客戶的基礎需求配對</li>
+                                    <li>例：存款產品的「安全存放現金」特色與「緊急備用金」需求配對</li>
+                                </ul>
+                                
+                                <h5>延伸價值 ↔ 延伸財務需求</h5>
+                                <ul>
+                                    <li>產品的附加價值與客戶的進階需求配對</li>
+                                    <li>例：投資產品的「通膨對沖策略」與「通膨防禦」需求配對</li>
+                                </ul>
+                                
+                                <h5>差異化優勢 ↔ 隱性需求/特殊情境需求</h5>
+                                <ul>
+                                    <li>產品的獨特優勢與客戶的深層需求配對</li>
+                                    <li>例：財富管理服務的「專業依賴與信任」與「專業依賴需求」配對</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100 framework-card">
+                        <div class="card-body">
+                            <div class="framework-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3 class="card-title" style="font-size:1.4rem;">時間維度配對</h3>
+                            <p>根據客戶需求的時間範圍與產品特色的時間屬性進行配對，確保時間匹配。</p>
+                            <div class="mt-4">
+                                <h5>短期需求 ↔ 即時可用特色</h5>
+                                <ul>
+                                    <li>客戶短期內需要滿足的需求與產品的即時可用特色配對</li>
+                                    <li>例：「緊急資金周轉」需求與信用卡的「短期資金靈活運用」特色配對</li>
+                                </ul>
+                                
+                                <h5>中期需求 ↔ 成長型特色</h5>
+                                <ul>
+                                    <li>客戶1-5年內的需求與產品的成長型特色配對</li>
+                                    <li>例：「子女教育金準備」需求與投資產品的「資產增值需求」特色配對</li>
+                                </ul>
+                                
+                                <h5>長期需求 ↔ 累積型特色</h5>
+                                <ul>
+                                    <li>客戶5年以上的需求與產品的長期累積特色配對</li>
+                                    <li>例：「退休規劃」需求與財富管理服務的「退休金累積」特色配對</li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-lg-6">
+                    <div class="card h-100 framework-card">
+                        <div class="card-body">
+                            <div class="framework-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3 class="card-title" style="font-size:1.4rem;">風險偏好維度配對</h3>
+                            <p>根據客戶的風險承受能力與產品的風險特性進行配對，確保風險匹配。</p>
+                            <div class="mt-4">
+                                <h5>保守型客戶溝通重點</h5>
+                                <ul>
+                                    <li>強調本金安全性和保障</li>
+                                    <li>說明固定收益的穩定性</li>
+                                    <li>避免使用「投資」等詞彙，改用「資金配置」、「財務規劃」等</li>
+                                    <li>以實際數字說明收益，而非報酬率百分比</li>
+                                </ul>
+                                
+                                <h5>穩健型客戶溝通重點</h5>
+                                <ul>
+                                    <li>強調風險與報酬的平衡</li>
+                                    <li>說明分散投資的重要性</li>
+                                    <li>使用實際案例說明中長期投資的效果</li>
+                                    <li>定期報告與檢視的承諾</li>
+                                </ul>
+                                
+                                <h5>積極型客戶溝通重點</h5>
+                                <ul>
+                                    <li>強調成長機會與市場趨勢</li>
+                                    <li>提供深度市場分析與前景</li>
+                                    <li>說明風險管理策略，而非規避風險</li>
+                                    <li>比較不同投資策略的長期表現</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100 framework-card">
+                        <div class="card-body">
+                            <div class="framework-icon">
+                                <i class="fas fa-user-clock"></i>
+                            </div>
+                            <h3 class="card-title" style="font-size:1.4rem;">人生階段維度配對</h3>
+                            <p>根據客戶所處的人生階段與產品的適用階段進行配對，確保生命週期匹配。</p>
+                            <div class="mt-4">
+                                <h5>初入社會期</h5>
+                                <ul>
+                                    <li>基本財務需求：活期存款帳戶、信用貸款、基本理財工具</li>
+                                    <li>延伸財務需求：共同基金（小額定投）、ETF（入門投資）、短期儲蓄目標</li>
+                                    <li>特殊情境/隱性需求：留學/進修資金規劃、創業資金準備、社交認同需求</li>
+                                </ul>
+                                
+                                <h5>家庭成立期</h5>
+                                <ul>
+                                    <li>基本財務需求：活期存款帳戶、房屋貸款、基本保險規劃</li>
+                                    <li>延伸財務需求：儲蓄型保險、共同基金、家庭保障規劃</li>
+                                    <li>特殊情境/隱性需求：婚禮/蜜月資金、家庭緊急預備金、伴侶財務協調</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-lg-6">
+                    <div class="card h-100 framework-card">
+                        <div class="card-body">
+                            <div class="framework-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3 class="card-title" style="font-size:1.4rem;">特殊情境維度配對</h3>
+                            <p>根據客戶的特殊情境需求與產品的特殊功能進行配對，確保特殊需求匹配。</p>
+                            <div class="mt-4">
+                                <h5>跨國需求 ↔ 國際化特色</h5>
+                                <ul>
+                                    <li>有跨國需求的客戶與提供國際服務的產品特色配對</li>
+                                    <li>例：「海外資金調度」需求與存款產品的「匯率波動獲利」特色配對</li>
+                                </ul>
+                                
+                                <h5>稅務規劃需求 ↔ 稅務優化特色</h5>
+                                <ul>
+                                    <li>有稅務規劃需求的客戶與提供稅務優化的產品特色配對</li>
+                                    <li>例：「節稅安排」需求與財富管理服務的「合法節稅需求」特色配對</li>
+                                </ul>
+                                
+                                <h5>被動收入需求 ↔ 收益生成特色</h5>
+                                <ul>
+                                    <li>追求被動收入的客戶與提供穩定收益的產品特色配對</li>
+                                    <li>例：「打造現金流或被動收入」需求與投資產品的「穩定收益來源」特色配對</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100 framework-card">
+                        <div class="card-body">
+                            <div class="framework-icon">
+                                <i class="fas fa-tags"></i>
+                            </div>
+                            <h3 class="card-title" style="font-size:1.4rem;">產品類型與需求層次配對</h3>
+                            <p>根據產品類型與客戶需求層次進行配對，確保產品類型匹配。</p>
+                            <div class="mt-4">
+                                <h5>存款產品</h5>
+                                <ul>
+                                    <li>基本財務需求：活期存款帳戶、定期存款、活期儲蓄帳戶</li>
+                                    <li>延伸財務需求：定期存款、階梯式定存、自動轉存服務</li>
+                                    <li>特殊情境/隱性需求：外幣存款、結構型存款、特色主題存款</li>
+                                </ul>
+                                
+                                <h5>貸款產品</h5>
+                                <ul>
+                                    <li>基本財務需求：房屋貸款、信用貸款、教育貸款</li>
+                                    <li>延伸財務需求：房屋增貸/二胎、創業貸款、投資型房貸</li>
+                                    <li>特殊情境/隱性需求：海外留學貸款、豪宅貸款、度假屋貸款</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">配對優先順序原則</h2>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title" style="font-size:1.4rem;">安全性優先原則</h3>
+                            <h5>基本安全需求優先滿足</h5>
+                            <p>首先確保客戶的基本財務安全需求得到滿足</p>
+                            <p>例：在推薦投資產品前，確保客戶已有足夠的緊急備用金</p>
+                            
+                            <h5>風險承受度評估先行</h5>
+                            <p>在配對前先評估客戶的風險承受能力，避免過度風險</p>
+                            <p>例：保守型客戶優先配對存款產品，而非高風險投資產品</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title" style="font-size:1.4rem;">顯性到隱性原則</h3>
+                            <h5>先滿足明確表達需求</h5>
+                            <p>優先處理客戶明確表達的需求</p>
+                            <p>例：客戶明確表達需要「購屋資金」時，優先配對房屋貸款產品</p>
+                            
+                            <h5>再挖掘潛在隱性需求</h5>
+                            <p>在滿足顯性需求後，進一步探索客戶未明確表達的需求</p>
+                            <p>例：提供房貸的同時，探索客戶對「財務安全感」的隱性需求</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title" style="font-size:1.4rem;">短期到長期原則</h3>
+                            <h5>解決當前迫切需求</h5>
+                            <p>優先解決客戶當前面臨的迫切財務需求</p>
+                            <p>例：先滿足「緊急資金周轉」需求，再規劃長期投資</p>
+                            
+                            <h5>逐步規劃長期需求</h5>
+                            <p>在解決短期需求後，逐步引導客戶規劃長期財務目標</p>
+                            <p>例：在提供信用貸款後，引導客戶考慮「退休規劃」需求</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title" style="font-size:1.4rem;">基礎到進階原則</h3>
+                            <h5>建立基礎金融關係</h5>
+                            <p>先建立基本的金融服務關係，奠定信任基礎</p>
+                            <p>例：先提供基本存款帳戶，再推薦投資產品</p>
+                            
+                            <h5>逐步深化金融服務</h5>
+                            <p>隨著關係深化，逐步提供更複雜、更個人化的金融服務</p>
+                            <p>例：從基本信用卡服務發展到私人銀行服務</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title" style="font-size:1.4rem;">需求衝突平衡原則</h3>
+                            <h5>識別需求間的衝突</h5>
+                            <p>辨識客戶不同需求間可能存在的衝突</p>
+                            <p>例：「流動性需求」與「高收益需求」之間的衝突</p>
+                            
+                            <h5>提供平衡解決方案</h5>
+                            <p>設計能夠平衡不同需求的產品組合</p>
+                            <p>例：部分資金配置高流動性產品，部分配置高收益產品</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">配對精準度提升策略</h2>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title" style="font-size:1.4rem;">需求分層策略</h3>
+                            <ul class="list-unstyled">
+                                <li><strong>核心需求識別</strong>：識別客戶最核心、最迫切的需求</li>
+                                <li><strong>輔助需求識別</strong>：識別支持核心需求的次要需求</li>
+                                <li><strong>潛在需求預測</strong>：基於客戶特徵和行為預測可能的潛在需求</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title" style="font-size:1.4rem;">產品特色分級策略</h3>
+                            <ul class="list-unstyled">
+                                <li><strong>基本特色明確化</strong>：清晰定義產品的基本功能特色</li>
+                                <li><strong>延伸價值具體化</strong>：具體說明產品如何提供超出基本功能的價值</li>
+                                <li><strong>差異化優勢突出化</strong>：突出產品相較競爭對手的獨特優勢</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title" style="font-size:1.4rem;">情境適配策略</h3>
+                            <ul class="list-unstyled">
+                                <li><strong>生活情境分析</strong>：分析客戶所處的具體生活情境</li>
+                                <li><strong>經濟環境考量</strong>：考慮當前經濟環境對客戶需求的影響</li>
+                                <li><strong>特殊事件應對</strong>：針對客戶生活中的特殊事件提供適配方案</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title" style="font-size:1.4rem;">動態調整策略</h3>
+                            <ul class="list-unstyled">
+                                <li><strong>需求變化監測</strong>：持續監測客戶需求的變化</li>
+                                <li><strong>產品組合優化</strong>：根據需求變化調整產品組合</li>
+                                <li><strong>關係深化規劃</strong>：規劃客戶關係的長期發展路徑</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title" style="font-size:1.4rem;">新興需求對應策略</h3>
+                            <ul class="list-unstyled">
+                                <li><strong>被動收入需求對應</strong>：針對客戶追求財務自由的被動收入需求提供解決方案</li>
+                                <li><strong>海外資金需求對應</strong>：針對客戶跨國資金需求提供全面解決方案</li>
+                                <li><strong>數位生活需求對應</strong>：針對客戶數位化生活方式提供整合解決方案</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">開始使用適配工具</h2>
+                    <p class="lead mb-4">精準匹配客戶需求與金融產品，提供最佳解決方案</p>
+                    <a href="matching-matrix.html" class="btn btn-primary btn-lg mt-3">立即前往</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>網站管理員 HOOK<br>© 2025 客戶需求 × 產品適配 版權所有</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

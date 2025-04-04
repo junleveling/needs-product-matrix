@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>配對矩陣 - 客戶需求 × 產品適配</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">客戶需求 × 產品適配</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="customer-needs.html">客戶需求</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product-features.html">產品特色</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matching-framework.html">配對框架</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="matching-matrix.html">配對矩陣</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-gray">
+        <div class="container">
+            <h1 class="display-4 fw-bold">配對矩陣</h1>
+            <p class="lead">選擇客戶需求，即時查看所有配對矩陣中符合的產品</p>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="card mb-5">
+                <div class="card-body">
+                    <h3 class="card-title mb-4" style="font-size:1.4rem;">選擇客戶需求</h3>
+                    <div class="row g-3 need-selector">
+                        <div class="col-md-4">
+                            <h5>基本財務需求</h5>
+                            <div class="form-check">
+                                <input class="form-check-input need-checkbox" type="checkbox" id="need_savings" value="儲蓄與流動性需求">
+                                <label class="form-check-label" for="need_savings">儲蓄與流動性需求</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input need-checkbox" type="checkbox" id="need_financing" value="融資需求">
+                                <label class="form-check-label" for="need_financing">融資需求</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input need-checkbox" type="checkbox" id="need_investment" value="投資需求">
+                                <label class="form-check-label" for="need_investment">投資需求</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>延伸財務需求</h5>
+                            <div class="form-check">
+                                <input class="form-check-input need-checkbox" type="checkbox" id="need_risk" value="風險管理需求">
+                                <label class="form-check-label" for="need_risk">風險管理需求</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input need-checkbox" type="checkbox" id="need_quality" value="生活品質提升需求">
+                                <label class="form-check-label" for="need_quality">生活品質提升需求</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input need-checkbox" type="checkbox" id="need_life_stage" value="特定人生階段需求">
+                                <label class="form-check-label" for="need_life_stage">特定人生階段需求</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>特殊情境需求</h5>
+                            <div class="form-check">
+                                <input class="form-check-input need-checkbox" type="checkbox" id="need_international" value="跨國需求">
+                                <label class="form-check-label" for="need_international">跨國需求</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input need-checkbox" type="checkbox" id="need_tax" value="稅務規劃需求">
+                                <label class="form-check-label" for="need_tax">稅務規劃需求</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input need-checkbox" type="checkbox" id="need_passive" value="打造現金流/被動收入需求">
+                                <label class="form-check-label" for="need_passive">打造現金流/被動收入需求</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="nav nav-tabs mb-4" id="matrixTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="risk-time-tab" data-bs-toggle="tab" data-bs-target="#risk-time" type="button" role="tab" aria-controls="risk-time" aria-selected="true">風險偏好</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="life-stage-need-tab" data-bs-toggle="tab" data-bs-target="#life-stage-need" type="button" role="tab" aria-controls="life-stage-need" aria-selected="false">人生階段</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="product-need-tab" data-bs-toggle="tab" data-bs-target="#product-need" type="button" role="tab" aria-controls="product-need" aria-selected="false">產品類型</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="situation-feature-tab" data-bs-toggle="tab" data-bs-target="#situation-feature" type="button" role="tab" aria-controls="situation-feature" aria-selected="false">特殊情境</button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="matrixTabContent">
+                <!-- 風險偏好與時間維度矩陣 -->
+                <div class="tab-pane fade show active" id="risk-time" role="tabpanel" aria-labelledby="risk-time-tab">
+                    <h3 class="mb-4" style="font-size:1.4rem;">風險偏好與時間維度配對矩陣</h3>
+                    <div class="matrix-container">
+                        <table class="table table-bordered matrix-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">短期 (1年以內)</th>
+                                    <th scope="col">中期 (1-5年)</th>
+                                    <th scope="col">長期 (5年以上)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">保守型</th>
+                                    <td class="matrix-cell" data-needs="儲蓄與流動性需求">活期存款、貨幣市場基金</td>
+                                    <td class="matrix-cell" data-needs="儲蓄與流動性需求,風險管理需求">定期存款、保本型結構性產品</td>
+                                    <td class="matrix-cell" data-needs="投資需求,風險管理需求">政府債券、儲蓄型保險</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">穩健型</th>
+                                    <td class="matrix-cell" data-needs="儲蓄與流動性需求,投資需求">短期債券基金、結構性存款</td>
+                                    <td class="matrix-cell" data-needs="投資需求,風險管理需求">平衡型基金、公司債券</td>
+                                    <td class="matrix-cell" data-needs="投資需求,特定人生階段需求,打造現金流/被動收入需求">股息型基金、投資型保險</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">積極型</th>
+                                    <td class="matrix-cell" data-needs="投資需求,生活品質提升需求">股票型基金、結構性商品</td>
+                                    <td class="matrix-cell" data-needs="投資需求,生活品質提升需求,打造現金流/被動收入需求">主題型基金、不動產投資</td>
+                                    <td class="matrix-cell" data-needs="投資需求,生活品質提升需求,打造現金流/被動收入需求">全球股票、另類投資</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 人生階段與需求層次矩陣 -->
+                <div class="tab-pane fade" id="life-stage-need" role="tabpanel" aria-labelledby="life-stage-need-tab">
+                    <h3 class="mb-4" style="font-size:1.4rem;">人生階段與需求層次配對矩陣</h3>
+                    <div class="matrix-container">
+                        <table class="table table-bordered matrix-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">基本財務安全</th>
+                                    <th scope="col">財務保障與穩定</th>
+                                    <th scope="col">金融社會認同</th>
+                                    <th scope="col">財務成就與獨立</th>
+                                    <th scope="col">財務目標達成</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">初入社會期</th>
+                                    <td class="matrix-cell" data-needs="儲蓄與流動性需求">活期存款、數位帳戶</td>
+                                    <td class="matrix-cell" data-needs="風險管理需求">意外險、醫療險</td>
+                                    <td class="matrix-cell" data-needs="生活品質提升需求">入門級信用卡</td>
+                                    <td class="matrix-cell" data-needs="投資需求">小額投資App</td>
+                                    <td class="matrix-cell" data-needs="特定人生階段需求">自動化理財工具</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">家庭成立期</th>
+                                    <td class="matrix-cell" data-needs="儲蓄與流動性需求,融資需求">聯名帳戶、房屋貸款</td>
+                                    <td class="matrix-cell" data-needs="風險管理需求,特定人生階段需求">壽險、家庭保障險</td>
+                                    <td class="matrix-cell" data-needs="生活品質提升需求">家庭消費卡</td>
+                                    <td class="matrix-cell" data-needs="投資需求,特定人生階段需求">定期定額投資</td>
+                                    <td class="matrix-cell" data-needs="特定人生階段需求,打造現金流/被動收入需求">家庭財務規劃</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">家庭成長期</th>
+                                    <td class="matrix-cell" data-needs="儲蓄與流動性需求,融資需求">家庭儲蓄帳戶、教育貸款</td>
+                                    <td class="matrix-cell" data-needs="風險管理需求,特定人生階段需求">子女教育金保險</td>
+                                    <td class="matrix-cell" data-needs="生活品質提升需求">家庭旅遊卡</td>
+                                    <td class="matrix-cell" data-needs="投資需求,特定人生階段需求">子女教育基金</td>
+                                    <td class="matrix-cell" data-needs="特定人生階段需求,稅務規劃需求">家庭稅務規劃</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">事業高峰期</th>
+                                    <td class="matrix-cell" data-needs="儲蓄與流動性需求">高利率活存帳戶</td>
+                                    <td class="matrix-cell" data-needs="風險管理需求,投資需求">資產配置服務</td>
+                                    <td class="matrix-cell" data-needs="生活品質提升需求">尊榮信用卡</td>
+                                    <td class="matrix-cell" data-needs="投資需求,打造現金流/被動收入需求">多元投資組合</td>
+                                    <td class="matrix-cell" data-needs="稅務規劃需求,跨國需求">全球資產配置</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">退休準備期</th>
+                                    <td class="matrix-cell" data-needs="儲蓄與流動性需求">退休準備金帳戶</td>
+                                    <td class="matrix-cell" data-needs="風險管理需求,投資需求">退休保障型商品</td>
+                                    <td class="matrix-cell" data-needs="生活品質提升需求">高端理財服務</td>
+                                    <td class="matrix-cell" data-needs="投資需求,打造現金流/被動收入需求">退休收益型投資</td>
+                                    <td class="matrix-cell" data-needs="稅務規劃需求,打造現金流/被動收入需求">退休財富傳承規劃</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">退休生活期</th>
+                                    <td class="matrix-cell" data-needs="儲蓄與流動性需求">退休金提領帳戶</td>
+                                    <td class="matrix-cell" data-needs="風險管理需求,打造現金流/被動收入需求">年金保險</td>
+                                    <td class="matrix-cell" data-needs="生活品質提升需求">長者專屬服務</td>
+                                    <td class="matrix-cell" data-needs="投資需求,打造現金流/被動收入需求">穩定收益型投資</td>
+                                    <td class="matrix-cell" data-needs="稅務規劃需求,打造現金流/被動收入需求">遺產規劃服務</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 產品類型與需求層次矩陣 -->
+                <div class="tab-pane fade" id="product-need" role="tabpanel" aria-labelledby="product-need-tab">
+                    <h3 class="mb-4" style="font-size:1.4rem;">產品類型與需求層次配對矩陣</h3>
+                    <div class="matrix-container">
+                        <table class="table table-bordered matrix-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">基本財務需求</th>
+                                    <th scope="col">延伸財務需求</th>
+                                    <th scope="col">特殊情境/隱性需求</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">存款產品</th>
+                                    <td class="matrix-cell" data-needs="儲蓄與流動性需求">活期存款、定期存款</td>
+                                    <td class="matrix-cell" data-needs="風險管理需求,特定人生階段需求">階梯式定存、自動轉存</td>
+                                    <td class="matrix-cell" data-needs="跨國需求,打造現金流/被動收入需求">外幣存款、結構型存款</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">貸款產品</th>
+                                    <td class="matrix-cell" data-needs="融資需求">房屋貸款、信用貸款</td>
+                                    <td class="matrix-cell" data-needs="融資需求,特定人生階段需求">房屋增貸、創業貸款</td>
+                                    <td class="matrix-cell" data-needs="跨國需求,特定人生階段需求">海外留學貸款、豪宅貸款</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">投資產品</th>
+                                    <td class="matrix-cell" data-needs="投資需求">基金、股票、債券</td>
+                                    <td class="matrix-cell" data-needs="投資需求,風險管理需求">ETF、平衡型基金</td>
+                                    <td class="matrix-cell" data-needs="投資需求,打造現金流/被動收入需求,跨國需求">全球股息基金、另類投資</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">保險產品</th>
+                                    <td class="matrix-cell" data-needs="風險管理需求">壽險、醫療險</td>
+                                    <td class="matrix-cell" data-needs="風險管理需求,特定人生階段需求">儲蓄險、投資型保險</td>
+                                    <td class="matrix-cell" data-needs="風險管理需求,打造現金流/被動收入需求,稅務規劃需求">年金保險、高保額壽險</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">信用卡產品</th>
+                                    <td class="matrix-cell" data-needs="儲蓄與流動性需求,生活品質提升需求">基本信用卡、現金回饋卡</td>
+                                    <td class="matrix-cell" data-needs="生活品質提升需求">哩程卡、聯名卡</td>
+                                    <td class="matrix-cell" data-needs="生活品質提升需求,跨國需求">頂級卡、無限卡</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">財富管理服務</th>
+                                    <td class="matrix-cell" data-needs="投資需求,風險管理需求">基本理財規劃</td>
+                                    <td class="matrix-cell" data-needs="投資需求,風險管理需求,特定人生階段需求">資產配置服務</td>
+                                    <td class="matrix-cell" data-needs="投資需求,稅務規劃需求,跨國需求,打造現金流/被動收入需求">家族辦公室、全球資產配置</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 特殊情境與產品特色矩陣 -->
+                <div class="tab-pane fade" id="situation-feature" role="tabpanel" aria-labelledby="situation-feature-tab">
+                    <h3 class="mb-4" style="font-size:1.4rem;">特殊情境與產品特色配對矩陣</h3>
+                    <div class="matrix-container">
+                        <table class="table table-bordered matrix-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">基本特色</th>
+                                    <th scope="col">延伸價值</th>
+                                    <th scope="col">差異化優勢</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">打造現金流/被動收入需求</th>
+                                    <td class="matrix-cell" data-needs="打造現金流/被動收入需求,投資需求">定期存款、債券投資</td>
+                                    <td class="matrix-cell" data-needs="打造現金流/被動收入需求,投資需求">多元收益組合、股息成長策略</td>
+                                    <td class="matrix-cell" data-needs="打造現金流/被動收入需求,投資需求,稅務規劃需求">智能收益再投資、全球收益資產配置</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">海外資金調度需求</th>
+                                    <td class="matrix-cell" data-needs="跨國需求,儲蓄與流動性需求">外幣帳戶、國際匯款服務</td>
+                                    <td class="matrix-cell" data-needs="跨國需求,投資需求">多幣別資產配置、外幣理財產品</td>
+                                    <td class="matrix-cell" data-needs="跨國需求,投資需求,稅務規劃需求">全球財富管理平台、離岸金融服務</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">稅務規劃需求</th>
+                                    <td class="matrix-cell" data-needs="稅務規劃需求,投資需求">退休金帳戶、保險產品</td>
+                                    <td class="matrix-cell" data-needs="稅務規劃需求,投資需求,特定人生階段需求">家族信託、投資組合稅務優化</td>
+                                    <td class="matrix-cell" data-needs="稅務規劃需求,跨國需求">跨國稅務諮詢、客製化稅務解決方案</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">跨國生活需求</th>
+                                    <td class="matrix-cell" data-needs="跨國需求,儲蓄與流動性需求">多幣別帳戶、國際信用卡</td>
+                                    <td class="matrix-cell" data-needs="跨國需求,投資需求,特定人生階段需求">全球數位銀行、國際教育金規劃</td>
+                                    <td class="matrix-cell" data-needs="跨國需求,投資需求,稅務規劃需求">全球公民金融服務、國際稅務身分管理</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>網站管理員 HOOK<br>© 2025 客戶需求 × 產品適配 版權所有</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

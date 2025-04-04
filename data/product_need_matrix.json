@@ -1,0 +1,322 @@
+{
+  "matrix_type": "product_need",
+  "product_types": ["存款產品", "貸款產品", "投資產品", "保險產品", "財富管理服務"],
+  "need_levels": ["基本財務需求", "延伸財務需求", "特殊情境/隱性需求"],
+  "mappings": [
+    {
+      "product_type": "存款產品",
+      "need": "基本財務需求",
+      "needs": [
+        {
+          "name": "日常交易便利性",
+          "description": "滿足日常交易和支付需求",
+          "priority": 1
+        },
+        {
+          "name": "短期資金存放",
+          "description": "提供安全的短期資金存放選擇",
+          "priority": 2
+        },
+        {
+          "name": "緊急備用金",
+          "description": "預備不時之需的資金",
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "product_type": "存款產品",
+      "need": "延伸財務需求",
+      "needs": [
+        {
+          "name": "資產保值",
+          "description": "在經濟波動時期保護資產價值",
+          "priority": 1
+        },
+        {
+          "name": "短期理財目標",
+          "description": "為短期目標進行資金規劃",
+          "priority": 2
+        },
+        {
+          "name": "流動性管理",
+          "description": "靈活管理資金的流動性需求",
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "product_type": "存款產品",
+      "need": "特殊情境/隱性需求",
+      "needs": [
+        {
+          "name": "匯率風險規避",
+          "description": "跨國投資時的匯率波動風險管理",
+          "priority": 1
+        },
+        {
+          "name": "跨國資金需求",
+          "description": "管理跨國資金和多幣別需求",
+          "priority": 2
+        },
+        {
+          "name": "心理安全感",
+          "description": "提供財務安全感和穩定預期",
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "product_type": "貸款產品",
+      "need": "基本財務需求",
+      "needs": [
+        {
+          "name": "購屋資金",
+          "description": "購買自住或投資房產所需的長期資金",
+          "priority": 1
+        },
+        {
+          "name": "消費融資",
+          "description": "大額消費品的分期付款需求",
+          "priority": 2
+        },
+        {
+          "name": "教育資金",
+          "description": "子女教育費用的籌措",
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "product_type": "貸款產品",
+      "need": "延伸財務需求",
+      "needs": [
+        {
+          "name": "資產增值",
+          "description": "透過槓桿效應增加資產價值",
+          "priority": 1
+        },
+        {
+          "name": "創業資金",
+          "description": "開展事業所需的啟動資金",
+          "priority": 2
+        },
+        {
+          "name": "資金靈活調度",
+          "description": "靈活運用資金滿足不同需求",
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "product_type": "貸款產品",
+      "need": "特殊情境/隱性需求",
+      "needs": [
+        {
+          "name": "子女海外教育",
+          "description": "支付國外學費和生活費的需求",
+          "priority": 1
+        },
+        {
+          "name": "生活品質提升",
+          "description": "提升生活品質和享受的需求",
+          "priority": 2
+        },
+        {
+          "name": "社會地位象徵",
+          "description": "透過特定資產彰顯社會地位",
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "product_type": "投資產品",
+      "need": "基本財務需求",
+      "needs": [
+        {
+          "name": "資產增值",
+          "description": "希望資金能夠產生報酬，跑贏通膨",
+          "priority": 1
+        },
+        {
+          "name": "投資風險分散",
+          "description": "降低單一投資標的風險",
+          "priority": 2
+        },
+        {
+          "name": "通膨防禦",
+          "description": "對抗通貨膨脹侵蝕資產價值",
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "product_type": "投資產品",
+      "need": "延伸財務需求",
+      "needs": [
+        {
+          "name": "打造現金流或被動收入",
+          "description": "建立穩定的現金流和被動收入",
+          "priority": 1
+        },
+        {
+          "name": "全球資產配置",
+          "description": "分散投資於不同國家和地區",
+          "priority": 2
+        },
+        {
+          "name": "稅務效益",
+          "description": "透過投資獲取稅務優惠",
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "product_type": "投資產品",
+      "need": "特殊情境/隱性需求",
+      "needs": [
+        {
+          "name": "市場參與感",
+          "description": "參與市場和經濟發展的成就感",
+          "priority": 1
+        },
+        {
+          "name": "專業認同",
+          "description": "獲得專業投資決策的認可",
+          "priority": 2
+        },
+        {
+          "name": "社群歸屬感",
+          "description": "加入特定投資社群的歸屬感",
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "product_type": "保險產品",
+      "need": "基本財務需求",
+      "needs": [
+        {
+          "name": "風險保障",
+          "description": "提供基本的人壽和財務保障",
+          "priority": 1
+        },
+        {
+          "name": "醫療保障",
+          "description": "提供醫療費用保障",
+          "priority": 2
+        },
+        {
+          "name": "意外保障",
+          "description": "提供意外傷害保障",
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "product_type": "保險產品",
+      "need": "延伸財務需求",
+      "needs": [
+        {
+          "name": "退休規劃",
+          "description": "為退休生活預做準備",
+          "priority": 1
+        },
+        {
+          "name": "財富傳承",
+          "description": "資產傳承給下一代的規劃",
+          "priority": 2
+        },
+        {
+          "name": "長期照護規劃",
+          "description": "為長期照護需求預做準備",
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "product_type": "保險產品",
+      "need": "特殊情境/隱性需求",
+      "needs": [
+        {
+          "name": "家族價值延續",
+          "description": "延續家族價值和使命",
+          "priority": 1
+        },
+        {
+          "name": "心理安全感",
+          "description": "提供對未來的安心和保障",
+          "priority": 2
+        },
+        {
+          "name": "責任實現",
+          "description": "履行對家人的責任和承諾",
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "product_type": "財富管理服務",
+      "need": "基本財務需求",
+      "needs": [
+        {
+          "name": "資產配置規劃",
+          "description": "全面的資產配置建議和規劃",
+          "priority": 1
+        },
+        {
+          "name": "退休規劃",
+          "description": "專業的退休財務規劃",
+          "priority": 2
+        },
+        {
+          "name": "稅務規劃",
+          "description": "提供稅務優化建議",
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "product_type": "財富管理服務",
+      "need": "延伸財務需求",
+      "needs": [
+        {
+          "name": "財富傳承",
+          "description": "專業的財富傳承規劃",
+          "priority": 1
+        },
+        {
+          "name": "全球資產配置",
+          "description": "跨國資產管理與配置",
+          "priority": 2
+        },
+        {
+          "name": "風險管理",
+          "description": "全面評估和管理財務風險",
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "product_type": "財富管理服務",
+      "need": "特殊情境/隱性需求",
+      "needs": [
+        {
+          "name": "社會地位彰顯",
+          "description": "彰顯社會地位和精英身分",
+          "priority": 1
+        },
+        {
+          "name": "專屬服務體驗",
+          "description": "享受尊榮專屬的服務體驗",
+          "priority": 2
+        },
+        {
+          "name": "生命意義實現",
+          "description": "實現更高層次的生命意義和目標",
+          "priority": 3
+        }
+      ]
+    }
+  ]
+}

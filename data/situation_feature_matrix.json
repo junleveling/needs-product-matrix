@@ -1,0 +1,319 @@
+{
+  "matrix_type": "situation_feature",
+  "situations": ["打造現金流/被動收入需求", "海外資金調度需求", "稅務規劃需求", "跨國生活需求"],
+  "feature_levels": ["基本特色", "延伸價值", "差異化優勢"],
+  "mappings": [
+    {
+      "situation": "打造現金流/被動收入需求",
+      "feature_level": "基本特色",
+      "products": [
+        {
+          "name": "定期存款",
+          "feature": "穩定利息收入",
+          "priority": 1
+        },
+        {
+          "name": "債券投資",
+          "feature": "固定收益來源",
+          "priority": 2
+        },
+        {
+          "name": "股息型基金",
+          "feature": "定期配息",
+          "priority": 3
+        },
+        {
+          "name": "年金保險",
+          "feature": "定期給付",
+          "priority": 4
+        }
+      ]
+    },
+    {
+      "situation": "打造現金流/被動收入需求",
+      "feature_level": "延伸價值",
+      "products": [
+        {
+          "name": "多元收益組合",
+          "feature": "收入來源多樣化",
+          "priority": 1
+        },
+        {
+          "name": "股息成長策略",
+          "feature": "長期收益增長",
+          "priority": 2
+        },
+        {
+          "name": "階梯式債券配置",
+          "feature": "穩定現金流",
+          "priority": 3
+        },
+        {
+          "name": "REITs投資",
+          "feature": "租金收益",
+          "priority": 4
+        }
+      ]
+    },
+    {
+      "situation": "打造現金流/被動收入需求",
+      "feature_level": "差異化優勢",
+      "products": [
+        {
+          "name": "智能收益再投資",
+          "feature": "複利效果最大化",
+          "priority": 1
+        },
+        {
+          "name": "全球收益資產配置",
+          "feature": "地域分散",
+          "priority": 2
+        },
+        {
+          "name": "通膨連動收益產品",
+          "feature": "實質收益保障",
+          "priority": 3
+        },
+        {
+          "name": "稅務效益最佳化",
+          "feature": "稅後收益提升",
+          "priority": 4
+        }
+      ]
+    },
+    {
+      "situation": "海外資金調度需求",
+      "feature_level": "基本特色",
+      "products": [
+        {
+          "name": "外幣帳戶",
+          "feature": "多幣別存款",
+          "priority": 1
+        },
+        {
+          "name": "國際匯款服務",
+          "feature": "跨境資金移轉",
+          "priority": 2
+        },
+        {
+          "name": "外幣定存",
+          "feature": "海外資金存放",
+          "priority": 3
+        },
+        {
+          "name": "環球信用卡",
+          "feature": "全球消費",
+          "priority": 4
+        }
+      ]
+    },
+    {
+      "situation": "海外資金調度需求",
+      "feature_level": "延伸價值",
+      "products": [
+        {
+          "name": "多幣別資產配置",
+          "feature": "匯率風險分散",
+          "priority": 1
+        },
+        {
+          "name": "外幣理財產品",
+          "feature": "海外收益",
+          "priority": 2
+        },
+        {
+          "name": "跨國銀行服務",
+          "feature": "全球帳戶整合",
+          "priority": 3
+        },
+        {
+          "name": "外幣保單",
+          "feature": "國際保障",
+          "priority": 4
+        }
+      ]
+    },
+    {
+      "situation": "海外資金調度需求",
+      "feature_level": "差異化優勢",
+      "products": [
+        {
+          "name": "全球財富管理平台",
+          "feature": "一站式服務",
+          "priority": 1
+        },
+        {
+          "name": "離岸金融服務",
+          "feature": "資產配置彈性",
+          "priority": 2
+        },
+        {
+          "name": "國際稅務規劃",
+          "feature": "跨國稅務優化",
+          "priority": 3
+        },
+        {
+          "name": "全球緊急資金調度",
+          "feature": "流動性保障",
+          "priority": 4
+        }
+      ]
+    },
+    {
+      "situation": "稅務規劃需求",
+      "feature_level": "基本特色",
+      "products": [
+        {
+          "name": "退休金帳戶",
+          "feature": "稅務遞延",
+          "priority": 1
+        },
+        {
+          "name": "保險產品",
+          "feature": "稅務優惠",
+          "priority": 2
+        },
+        {
+          "name": "長期投資",
+          "feature": "資本利得規劃",
+          "priority": 3
+        },
+        {
+          "name": "慈善捐贈",
+          "feature": "稅務減免",
+          "priority": 4
+        }
+      ]
+    },
+    {
+      "situation": "稅務規劃需求",
+      "feature_level": "延伸價值",
+      "products": [
+        {
+          "name": "家族信託",
+          "feature": "世代傳承規劃",
+          "priority": 1
+        },
+        {
+          "name": "投資組合稅務優化",
+          "feature": "稅效最大化",
+          "priority": 2
+        },
+        {
+          "name": "資產重組策略",
+          "feature": "稅負結構調整",
+          "priority": 3
+        },
+        {
+          "name": "遺產稅規劃工具",
+          "feature": "稅負最小化",
+          "priority": 4
+        }
+      ]
+    },
+    {
+      "situation": "稅務規劃需求",
+      "feature_level": "差異化優勢",
+      "products": [
+        {
+          "name": "跨國稅務諮詢",
+          "feature": "全球稅務優化",
+          "priority": 1
+        },
+        {
+          "name": "客製化稅務解決方案",
+          "feature": "個人化規劃",
+          "priority": 2
+        },
+        {
+          "name": "數位稅務追蹤工具",
+          "feature": "即時稅務管理",
+          "priority": 3
+        },
+        {
+          "name": "稅法變動應對策略",
+          "feature": "法規適應性",
+          "priority": 4
+        }
+      ]
+    },
+    {
+      "situation": "跨國生活需求",
+      "feature_level": "基本特色",
+      "products": [
+        {
+          "name": "多幣別帳戶",
+          "feature": "全球資金管理",
+          "priority": 1
+        },
+        {
+          "name": "國際信用卡",
+          "feature": "全球消費工具",
+          "priority": 2
+        },
+        {
+          "name": "海外匯款服務",
+          "feature": "跨境資金移動",
+          "priority": 3
+        },
+        {
+          "name": "環球醫療保險",
+          "feature": "全球健康保障",
+          "priority": 4
+        }
+      ]
+    },
+    {
+      "situation": "跨國生活需求",
+      "feature_level": "延伸價值",
+      "products": [
+        {
+          "name": "全球數位銀行",
+          "feature": "跨國理財平台",
+          "priority": 1
+        },
+        {
+          "name": "國際教育金規劃",
+          "feature": "海外學習資金",
+          "priority": 2
+        },
+        {
+          "name": "全球資產配置",
+          "feature": "國際市場參與",
+          "priority": 3
+        },
+        {
+          "name": "跨國不動產融資",
+          "feature": "海外置產支持",
+          "priority": 4
+        }
+      ]
+    },
+    {
+      "situation": "跨國生活需求",
+      "feature_level": "差異化優勢",
+      "products": [
+        {
+          "name": "全球公民金融服務",
+          "feature": "無地域限制",
+          "priority": 1
+        },
+        {
+          "name": "國際稅務身分管理",
+          "feature": "稅務身分優化",
+          "priority": 2
+        },
+        {
+          "name": "跨國生活顧問服務",
+          "feature": "全方位支持",
+          "priority": 3
+        },
+        {
+          "name": "全球緊急支援",
+          "feature": "跨國安全網",
+          "priority": 4
+        }
+      ]
+    }
+  ]
+}
